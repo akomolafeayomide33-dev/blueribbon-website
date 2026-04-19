@@ -39,7 +39,7 @@ export default function Programs() {
         },
         {
             id: "liones",
-            title: "LIONES",
+            title: "LIONESS",
             tagline: "Empowering Girls to Lead.",
             description: "A specialized initiative for girls and young women, providing them with the confidence, voice, and vision to break societal glass ceilings with excellence.",
             icon: <Sparkles size={32} />,

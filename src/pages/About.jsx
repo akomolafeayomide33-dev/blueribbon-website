@@ -3,9 +3,11 @@ import { PageHero } from "../components/shared/PageHero";
 import { SectionLabel } from "../components/shared/SectionLabel";
 import { Target, Eye, Shield, Users, BarChart3, Globe, ShieldCheck, Cpu } from "lucide-react";
 import founderImg from "../assets/images/president_sandra.png";
+import vpImg from "../assets/images/Vice President.png";
 import patronImg from "../assets/images/patron_gorgetter.png";
-import communityImg from "../assets/images/community_impact_outreach_1773416174071.png";
+import communityImg from "../assets/images/community_impact_outreach_1773416174071.jpg";
 import teensImg from "../assets/images/nigerian_teens_empowerment_1773416132724.png";
+import { Governance } from "../components/sections/Governance";
 
 
 export default function About() {
@@ -176,29 +178,51 @@ export default function About() {
                         </h2>
                     </div>
 
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {/* Founder Card */}
                         <motion.div
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="bg-[#FDF6EC] p-10 md:p-12 rounded-[3rem] border border-[#D4A017]/10"
+                            className="bg-[#FDF6EC] p-8 md:p-10 rounded-[3rem] border border-[#D4A017]/10 flex flex-col"
                         >
-                            <div className="flex flex-col md:flex-row gap-8 items-center md:items-start">
-                                <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-xl shrink-0">
+                            <div className="flex flex-col items-center text-center">
+                                <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-xl shrink-0 mb-6">
                                     <img
                                         src={founderImg}
                                         alt="Sandra Emmanuel - Akomolafe - Founder"
                                         className="w-full h-full object-cover object-[center_20%] scale-110"
                                     />
                                 </div>
-                                <div className="text-center md:text-left">
-                                    <h3 className="text-2xl font-display text-[#1A3A6B] mb-1">Sandra Emmanuel - Akomolafe</h3>
-                                    <p className="text-[#B5840D] font-bold text-xs uppercase tracking-widest mb-6">Founder & President</p>
-                                    <p className="text-gray-600 font-serif leading-relaxed italic">
-                                        "Provides vision stewardship, strategic oversight, and institutional direction. The Foundation exists to fulfill a divine mandate — and every program, partnership, and initiative is built on that foundation."
-                                    </p>
+                                <h3 className="text-xl md:text-2xl font-display text-[#1A3A6B] mb-1">Sandra Emmanuel - Akomolafe</h3>
+                                <p className="text-[#B5840D] font-bold text-[10px] uppercase tracking-widest mb-6">Founder & President</p>
+                                <p className="text-gray-600 font-serif leading-relaxed italic text-sm">
+                                    "Provides vision stewardship, strategic oversight, and institutional direction. The Foundation exists to fulfill a divine mandate — and every program, partnership, and initiative is built on that foundation."
+                                </p>
+                            </div>
+                        </motion.div>
+
+                        {/* Vice President Card */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 0.1 }}
+                            className="bg-white p-8 md:p-10 rounded-[3rem] border border-gray-100 shadow-sm flex flex-col"
+                        >
+                            <div className="flex flex-col items-center text-center">
+                                <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-[#FDF6EC] shadow-xl shrink-0 mb-6">
+                                    <img
+                                        src={vpImg}
+                                        alt="Ayomide Akomolafe - Vice President"
+                                        className="w-full h-full object-cover object-top"
+                                    />
                                 </div>
+                                <h3 className="text-xl md:text-2xl font-display text-[#1A3A6B] mb-1">Ayomide Akomolafe</h3>
+                                <p className="text-[#B5840D] font-bold text-[10px] uppercase tracking-widest mb-6">Vice President</p>
+                                <p className="text-gray-600 font-serif leading-relaxed italic text-sm">
+                                    "A marketing strategist driving impact and sustainable growth across communities and businesses."
+                                </p>
                             </div>
                         </motion.div>
 
@@ -207,24 +231,22 @@ export default function About() {
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            transition={{ delay: 0.1 }}
-                            className="bg-white p-10 md:p-12 rounded-[3rem] border border-gray-100 shadow-sm"
+                            transition={{ delay: 0.2 }}
+                            className="bg-white p-8 md:p-10 rounded-[3rem] border border-gray-100 shadow-sm flex flex-col"
                         >
-                            <div className="flex flex-col md:flex-row gap-8 items-center md:items-start">
-                                <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-[#FDF6EC] shadow-xl shrink-0">
+                            <div className="flex flex-col items-center text-center">
+                                <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-[#FDF6EC] shadow-xl shrink-0 mb-6">
                                     <img
                                         src={patronImg}
-                                        alt="Patron"
+                                        alt="Dr. Gorgetter Godwin, PhD"
                                         className="w-full h-full object-cover object-[center_15%] scale-125"
                                     />
                                 </div>
-                                <div className="text-center md:text-left">
-                                    <h3 className="text-2xl font-display text-[#1A3A6B] mb-1">Dr. Gorgetter Godwin, PhD</h3>
-                                    <p className="text-[#B5840D] font-bold text-xs uppercase tracking-widest mb-6">Patron — Bermuda</p>
-                                    <p className="text-gray-600 font-serif leading-relaxed">
-                                        "A distinguished leadership scholar and the Foundation's primary early sponsor. Dr. Godwin provides advisory guidance, strategic credibility, and institutional support from Bermuda."
-                                    </p>
-                                </div>
+                                <h3 className="text-xl md:text-2xl font-display text-[#1A3A6B] mb-1">Dr. Gorgetter Godwin, PhD</h3>
+                                <p className="text-[#B5840D] font-bold text-[10px] uppercase tracking-widest mb-6">Patron — Bermuda</p>
+                                <p className="text-gray-600 font-serif leading-relaxed text-sm italic">
+                                    "A distinguished leadership scholar providing advisory guidance, strategic credibility, and institutional support from Bermuda."
+                                </p>
                             </div>
                         </motion.div>
                     </div>
@@ -241,6 +263,8 @@ export default function About() {
                     </motion.div>
                 </div>
             </section>
+
+            <Governance />
 
             {/* Governance Structure */}
             <section className="py-24 bg-[#FDF6EC]/30">

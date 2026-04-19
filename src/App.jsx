@@ -7,7 +7,7 @@ import { ImpactCounter } from "./components/sections/ImpactCounter";
 import { ProgramGrid } from "./components/sections/ProgramGrid";
 import { Roadmap } from "./components/sections/Roadmap";
 import { SDGBar } from "./components/sections/SDGBar";
-import { Governance } from "./components/sections/Governance";
+import { Leadership } from "./components/sections/Leadership";
 import ScrollToTop from "./components/shared/ScrollToTop";
 
 // Inner Pages
@@ -26,7 +26,7 @@ function Home() {
       <ImpactCounter />
       <ProgramGrid />
       <Roadmap />
-      <Governance />
+      <Leadership />
       <SDGBar />
     </>
   );

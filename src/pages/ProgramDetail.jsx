@@ -16,6 +16,15 @@ import {
     Globe
 } from "lucide-react";
 
+// Image Imports
+import tivConference from "../assets/images/tiv_teens_conference_1776573098996.png";
+import tivLeadership from "../assets/images/tiv_teen_leadership_1776573142562.png";
+import gatekeepersMentoring from "../assets/images/gatekeepers_boys_mentoring_1776574014038.png";
+import gatekeepersCharacter from "../assets/images/gatekeepers_character_building_1776574390636.png";
+import teensEmpowermentImg from "../assets/images/nigerian_teens_empowerment_1773416132724.png";
+import outreachIbara1 from "../assets/images/outreach_ibara_202_1.jpg";
+import communityOutreachImg from "../assets/images/community_impact_outreach_1773416174071.png";
+
 const programData = {
     tiv: {
         title: "Teens in Vogue (TIV)",
@@ -33,12 +42,12 @@ const programData = {
             {
                 title: "The Identity Gap",
                 text: "The teenage years are the most critical period for identity formation. TIV addresses the crisis of identity among Nigerian youth by providing them with biblical and strategic tools to navigate social pressures and discover their unique purpose.",
-                image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2070&auto=format&fit=crop",
+                image: tivConference,
             },
             {
                 title: "Leadership Architecture",
                 text: "We believe leadership isn't just about positions; it's about influence. We teach teens to lead themselves first through discipline, emotional intelligence, and values-based decision-making, preparing them for future societal leadership.",
-                image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2084&auto=format&fit=crop",
+                image: tivLeadership,
             },
         ],
         features: ["Annual Empowerment Conference", "Peer Mentorship Circles", "Identity Discovery Workshops", "Leadership Retreats"],
@@ -59,20 +68,20 @@ const programData = {
             {
                 title: "Character First",
                 text: "We focus on building a strong internal compass. Through regular mentorship sessions, we address issues of masculinity, responsibility, and the importance of ethical living in a complex world.",
-                image: "https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?q=80&w=2070&auto=format&fit=crop",
+                image: gatekeepersMentoring,
             },
             {
                 title: "Skill & Discipline",
                 text: "Beyond character, we provide young men with practical life skills and the discipline required to excel in their chosen paths, ensuring they become contributors to national development.",
-                image: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop",
+                image: gatekeepersCharacter,
             },
         ],
         features: ["Character Mentorship", "Vocational Guidance", "Sports & Teamwork Drills", "Father-Figure Support"],
     },
     liones: {
-        title: "LIONES",
+        title: "LIONESS",
         tagline: "Empowering Girls to Lead.",
-        overview: "LIONES is a specialized initiative for girls and young women, designed to break societal glass ceilings through confidence, voice, and vision. We provide a platform where young women can discover their strengths, heal from past traumas, and step into their roles as leaders in governance, industry, and social development.",
+        overview: "LIONESS is a specialized initiative for girls and young women, designed to break societal glass ceilings through confidence, voice, and vision. We provide a platform where young women can discover their strengths, heal from past traumas, and step into their roles as leaders in governance, industry, and social development.",
         icon: <Sparkles size={32} />,
         color: "text-amber-600",
         bgColor: "bg-amber-50",
@@ -84,13 +93,13 @@ const programData = {
         sections: [
             {
                 title: "Confidence & Voice",
-                text: "Many young women in our communities face barriers to self-expression. LIONES provides the emotional and psychological support needed to build unshakeable confidence and an impactful voice.",
-                image: "https://images.unsplash.com/photo-1529612631642-706700c0175d?q=80&w=2070&auto=format&fit=crop",
+                text: "Many young women in our communities face barriers to self-expression. LIONESS provides the emotional and psychological support needed to build unshakeable confidence and an impactful voice.",
+                image: teensEmpowermentImg,
             },
             {
                 title: "Vision Mapping",
                 text: "We help girls move from daydreams to detailed plans. Through our vision mapping workshops, we equip them with the tools to navigate academic and professional landscapes with excellence.",
-                image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=2076&auto=format&fit=crop",
+                image: outreachIbara1,
             },
         ],
         features: ["Voice Mastery Workshops", "Academic Mentorship", "Health & Wellness Education", "Entrepreneurial Training"],
@@ -111,12 +120,12 @@ const programData = {
             {
                 title: "Direct Action",
                 text: "We believe compassion must be tangible. LOTS mobilizes volunteers to deliver food, medical supplies, and educational resources directly to those who need them most in rural and urban slums.",
-                image: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=2070&auto=format&fit=crop",
+                image: outreachIbara1,
             },
             {
                 title: "Psychosocial Support",
                 text: "Welfare is more than just materials. In correctional centers and IDP camps, we provide the psychological and emotional encouragement needed to restore dignity and hope.",
-                image: "https://images.unsplash.com/photo-1542601906990-b4d3fb773b09?q=80&w=2013&auto=format&fit=crop",
+                image: communityOutreachImg,
             },
         ],
         features: ["Correctional Center Visits", "Community Welfare Drives", "Emergency Relief Support", "Volunteer Mobilization"],
