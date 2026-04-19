@@ -85,7 +85,7 @@ export function Hero() {
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 1, duration: 0.6 }}
-                                className="absolute -bottom-6 -left-6 md:-left-12 bg-white p-5 rounded-2xl shadow-2xl z-20 border border-gray-50 max-w-[240px]"
+                                className="absolute -bottom-6 left-2 sm:-left-6 md:-left-12 bg-white p-4 md:p-5 rounded-2xl shadow-2xl z-20 border border-gray-50 max-w-[85%] md:max-w-[240px]"
                             >
                                 <div className="w-8 h-8 bg-[#D4A017]/10 flex items-center justify-center rounded-lg text-[#D4A017] mb-3">
                                     <Heart size={16} fill="currentColor" />

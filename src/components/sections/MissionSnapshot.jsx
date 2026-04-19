@@ -7,19 +7,28 @@ export function MissionSnapshot() {
             title: "Our Mission",
             description: "To restore hope and unlock the potential of vulnerable children and teens through leadership, empowerment, and community-driven impact.",
             icon: <Target size={32} className="text-[#D4A017]" />,
-            textColor: "text-[#1A3A6B]",
+            bgClass: "bg-[#1A3A6B]",
+            titleClass: "text-white",
+            descClass: "text-white/80",
+            iconBgClass: "bg-white/10",
         },
         {
             title: "Our Vision",
             description: "A future where every child leads with purpose, and communities are transformed through the intersection of strategy and faith.",
             icon: <Eye size={32} className="text-[#D4A017]" />,
-            textColor: "text-[#D4A017]",
+            bgClass: "bg-white",
+            titleClass: "text-[#B5840D]",
+            descClass: "text-gray-500",
+            iconBgClass: "bg-[#FDF6EC]",
         },
         {
             title: "Our Values",
             description: "Faith with excellence. Dignity and inclusion. Accountability and transparency. Empowerment over dependency. Innovation and sustainability.",
             icon: <Shield size={32} className="text-[#D4A017]" />,
-            textColor: "text-[#1A3A6B]",
+            bgClass: "bg-white",
+            titleClass: "text-[#1A3A6B]",
+            descClass: "text-gray-500",
+            iconBgClass: "bg-[#FDF6EC]",
         },
     ];
 
@@ -55,15 +64,15 @@ export function MissionSnapshot() {
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.15, duration: 0.6 }}
                             whileHover={{ y: -10 }}
-                            className="bg-white p-10 rounded-[2rem] shadow-[0_20px_50px_rgba(0,0,0,0.05)] border border-gray-50 flex flex-col items-center text-center group transition-all"
+                            className={`${card.bgClass} p-10 rounded-[2rem] shadow-[0_20px_50px_rgba(0,0,0,0.05)] border border-gray-50 flex flex-col items-center text-center group transition-all`}
                         >
-                            <div className="w-20 h-20 bg-[#FDF6EC] rounded-2xl flex items-center justify-center mb-8 transition-transform group-hover:scale-110 group-hover:rotate-3">
+                            <div className={`w-20 h-20 ${card.iconBgClass} rounded-2xl flex items-center justify-center mb-8 transition-transform group-hover:scale-110 group-hover:rotate-3`}>
                                 {card.icon}
                             </div>
-                            <h3 className={`text-2xl font-display font-bold mb-6 ${card.title === "Our Vision" ? "text-[#B5840D]" : "text-[#1A3A6B]"}`}>
+                            <h3 className={`text-2xl font-display font-bold mb-6 ${card.titleClass}`}>
                                 {card.title}
                             </h3>
-                            <p className="text-gray-500 leading-relaxed font-serif text-sm md:text-base">
+                            <p className={`leading-relaxed font-serif text-sm md:text-base ${card.descClass}`}>
                                 {card.description}
                             </p>
                         </motion.div>

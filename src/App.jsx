@@ -8,6 +8,7 @@ import { ProgramGrid } from "./components/sections/ProgramGrid";
 import { Roadmap } from "./components/sections/Roadmap";
 import { SDGBar } from "./components/sections/SDGBar";
 import { Governance } from "./components/sections/Governance";
+import ScrollToTop from "./components/shared/ScrollToTop";
 
 // Inner Pages
 import About from "./pages/About";
@@ -34,6 +35,7 @@ function Home() {
 function App() {
   return (
     <div className="min-h-screen flex flex-col">
+      <ScrollToTop />
       <Navbar />
       <main className="flex-grow">
         <Routes>

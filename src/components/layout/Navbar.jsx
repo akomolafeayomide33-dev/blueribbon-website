@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Heart } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
+import { motion } from "framer-motion";
 import { cn } from "../../lib/utils";
 
 export function Navbar() {

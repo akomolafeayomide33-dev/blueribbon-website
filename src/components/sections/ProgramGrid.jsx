@@ -35,7 +35,7 @@ export function ProgramGrid() {
         },
         {
             id: "liones",
-            title: "LIONES",
+            title: "LIONESS",
             tagline: "EMPOWERING GIRLS TO LEAD.",
             description: "Providing girls with the tools, confidence, and vision to break barriers and step into societal leadership with excellence.",
             icon: <Sparkles className="w-8 h-8" />,

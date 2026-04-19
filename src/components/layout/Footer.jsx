@@ -48,7 +48,7 @@ export function Footer() {
                         <ul className="space-y-4 text-sm text-white/50 font-serif">
                             <li><FooterLink href="/programs/tiv">Teens in Vogue (TIV)</FooterLink></li>
                             <li><FooterLink href="/programs/gatekeepers">The Gatekeepers</FooterLink></li>
-                            <li><FooterLink href="/programs/liones">LIONES Empowerment</FooterLink></li>
+                            <li><FooterLink href="/programs/liones">LIONESS Empowerment</FooterLink></li>
                             <li><FooterLink href="/programs/lots">LOTS Outreach</FooterLink></li>
                             <li><FooterLink href="/programs/blue-city">The Blue City</FooterLink></li>
                         </ul>
