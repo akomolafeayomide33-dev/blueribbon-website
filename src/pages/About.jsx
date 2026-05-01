@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 import { PageHero } from "../components/shared/PageHero";
 import { SectionLabel } from "../components/shared/SectionLabel";
 import { Target, Eye, Shield, Users, BarChart3, Globe, ShieldCheck, Cpu } from "lucide-react";
-import founderImg from "../assets/images/president_sandra.png";
+import founderImg from "../assets/images/president_sandra_new.jpg";
 import vpImg from "../assets/images/Vice President.png";
-import patronImg from "../assets/images/patron_gorgetter.png";
+import patronImg from "../assets/images/patron_georgette.jpg";
 import communityImg from "../assets/images/community_impact_outreach_1773416174071.jpg";
 import teensImg from "../assets/images/nigerian_teens_empowerment_1773416132724.png";
 import { Governance } from "../components/sections/Governance";
@@ -191,7 +191,7 @@ export default function About() {
                                     <img
                                         src={founderImg}
                                         alt="Sandra Emmanuel - Akomolafe - Founder"
-                                        className="w-full h-full object-cover object-[center_20%] scale-110"
+                                        className="w-full h-full object-cover object-top"
                                     />
                                 </div>
                                 <h3 className="text-xl md:text-2xl font-display text-[#1A3A6B] mb-1">Sandra Emmanuel - Akomolafe</h3>
@@ -238,14 +238,15 @@ export default function About() {
                                 <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-[#FDF6EC] shadow-xl shrink-0 mb-6">
                                     <img
                                         src={patronImg}
-                                        alt="Dr. Gorgetter Godwin, PhD"
-                                        className="w-full h-full object-cover object-[center_15%] scale-125"
+                                        alt="Dr. Georgette Prime-Godwin, PhD"
+                                        className="w-full h-full object-cover object-top"
                                     />
                                 </div>
-                                <h3 className="text-xl md:text-2xl font-display text-[#1A3A6B] mb-1">Dr. Gorgetter Godwin, PhD</h3>
+                                <h3 className="text-xl md:text-2xl font-display text-[#1A3A6B] mb-1">Dr. Georgette Prime-Godwin, PhD</h3>
+                                <p className="text-[#B5840D] font-bold text-[10px] uppercase tracking-widest mb-1">CEO & Founder, Godwin International Group LLC</p>
                                 <p className="text-[#B5840D] font-bold text-[10px] uppercase tracking-widest mb-6">Patron — Bermuda</p>
                                 <p className="text-gray-600 font-serif leading-relaxed text-sm italic">
-                                    "A distinguished leadership scholar providing advisory guidance, strategic credibility, and institutional support from Bermuda."
+                                    "Dr. Georgette Prime-Godwin is a respected leadership scholar and philanthropic advocate committed to advancing transformational initiatives globally. As an early patron of The Blue Ribbon Foundation, they support its mission through strategic guidance, philanthropic leadership, and the mobilization of broader support networks from Bermuda and beyond."
                                 </p>
                             </div>
                         </motion.div>

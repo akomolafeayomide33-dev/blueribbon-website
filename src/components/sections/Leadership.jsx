@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Quote } from "lucide-react";
-import presidentImg from "../../assets/images/president_sandra.png";
+import presidentImg from "../../assets/images/president_sandra_new.jpg";
 import vpImg from "../../assets/images/Vice President.png";
 
 export function Leadership() {

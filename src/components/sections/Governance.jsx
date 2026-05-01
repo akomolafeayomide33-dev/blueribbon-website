@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ShieldCheck, Award, Globe } from "lucide-react";
-import patronImg from "../../assets/images/patron_gorgetter.png";
+import patronImg from "../../assets/images/patron_georgette.jpg";
 
 export function Governance() {
     return (
@@ -63,8 +63,8 @@ export function Governance() {
                                 <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white/10 shadow-xl shrink-0">
                                     <img
                                         src={patronImg}
-                                        alt="Dr. Gorgetter Godwin, PhD"
-                                        className="w-full h-full object-cover object-[center_15%] scale-125"
+                                        alt="Dr. Georgette Prime-Godwin, PhD"
+                                        className="w-full h-full object-cover object-top"
                                     />
                                 </div>
                                 <div className="max-w-md">
@@ -72,10 +72,11 @@ export function Governance() {
                                         <Award size={16} />
                                         <span className="font-bold text-[10px] uppercase tracking-widest">Our Distinguished Patron</span>
                                     </div>
-                                    <h3 className="text-3xl font-display mb-2 text-white">Dr. Gorgetter Godwin, PhD</h3>
-                                    <p className="text-white/60 text-xs font-bold uppercase tracking-widest mb-6 underline decoration-[#D4A017] underline-offset-4">Bermuda</p>
+                                    <h3 className="text-3xl font-display mb-2 text-white">Dr. Georgette Prime-Godwin, PhD</h3>
+                                    <p className="text-white/60 text-xs font-bold uppercase tracking-widest mb-2">CEO & Founder, Godwin International Group LLC</p>
+                                    <p className="text-white/60 text-xs font-bold uppercase tracking-widest mb-6 underline decoration-[#D4A017] underline-offset-4">Patron — Bermuda</p>
                                     <p className="text-white/80 font-serif leading-relaxed italic">
-                                        "Strategy without spirituality is hollow; spirituality without strategy is ineffective. We are building a model that honors both, ensuring excellence in every outreach across the African continent."
+                                        "Dr. Georgette Prime-Godwin is a respected leadership scholar and philanthropic advocate committed to advancing transformational initiatives globally. As an early patron of The Blue Ribbon Foundation, they support its mission through strategic guidance, philanthropic leadership, and the mobilization of broader support networks from Bermuda and beyond."
                                     </p>
                                 </div>
                             </div>

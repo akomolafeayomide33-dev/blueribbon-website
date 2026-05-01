@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, ChevronRight, Heart } from "lucide-react";
 import { Link } from "react-router-dom";
-import presidentImg from "../../assets/images/president_sandra.png";
+import presidentImg from "../../assets/images/president_sandra_new.jpg";
 import heroImg from "../../assets/images/Hero Image.png";
 
 export function Hero() {
