@@ -10,8 +10,8 @@ export function Leadership() {
             role: "Founder & President",
             bio: "Provides vision stewardship, strategic oversight, and institutional direction. The Foundation exists to fulfill a divine mandate — and every program, partnership, and initiative is built on that foundation.",
             image: presidentImg,
-            accent: "bg-[#FDF6EC]",
-            border: "border-[#D4A017]/10"
+            accent: "bg-accent",
+            border: "border-secondary/10"
         },
         {
             name: "Ayomide Akomolafe",
@@ -31,7 +31,7 @@ export function Leadership() {
                         initial={{ opacity: 0, y: 10 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#B5840D]"
+                        className="text-[10px] font-bold uppercase tracking-[0.3em] text-secondary"
                     >
                         Our Leadership
                     </motion.span>
@@ -40,9 +40,9 @@ export function Leadership() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.1 }}
-                        className="text-4xl md:text-5xl text-[#1A3A6B] font-display"
+                        className="text-4xl md:text-5xl text-primary font-display"
                     >
-                        Visionaries of <span className="italic">Impact.</span>
+                        Visionaries of <span className="italic text-secondary">Impact.</span>
                     </motion.h2>
                 </div>
 
@@ -65,17 +65,17 @@ export function Leadership() {
                                             className="w-full h-full object-cover object-top"
                                         />
                                     </div>
-                                    <div className="absolute -bottom-4 -right-4 w-12 h-12 bg-[#D4A017] rounded-2xl flex items-center justify-center text-white shadow-lg rotate-12 group-hover:rotate-0 transition-transform duration-500">
+                                    <div className="absolute -bottom-4 -right-4 w-12 h-12 bg-accent-yellow rounded-2xl flex items-center justify-center text-primary shadow-lg rotate-12 group-hover:rotate-0 transition-transform duration-500">
                                         <Quote size={20} fill="currentColor" />
                                     </div>
                                 </div>
                                 
                                 <div className="text-center md:text-left space-y-4 pt-4">
                                     <div>
-                                        <h3 className="text-2xl md:text-3xl font-display text-[#1A3A6B] mb-1 leading-tight">
+                                        <h3 className="text-2xl md:text-3xl font-display text-primary mb-1 leading-tight">
                                             {leader.name}
                                         </h3>
-                                        <p className="text-[#B5840D] font-bold text-[10px] uppercase tracking-[0.2em]">
+                                        <p className="text-secondary font-bold text-[10px] uppercase tracking-[0.2em]">
                                             {leader.role}
                                         </p>
                                     </div>

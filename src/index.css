@@ -3,17 +3,18 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #1A3A6B;
-  --color-primary-light: #2A4A7B;
-  --color-primary-dark: #0A2A5B;
-  --color-secondary: #D4A017;
-  --color-secondary-light: #E4B027;
-  --color-secondary-dark: #C49007;
-  --color-secondary-contrast: #B5840D; /* Higher contrast gold for text readability */
-  --color-accent: #F9F7F2;
-  --color-background: #FDF6EC;
-  --color-charcoal: #1C1C1E;
-  --color-charcoal-light: #3F3F46; /* Better contrast for muted text */
+  --color-primary: #0096D1; /* Professional logo Blue */
+  --color-primary-light: #00AEEF; /* Bright logo Cyan */
+  --color-primary-dark: #005A8C;
+  --color-secondary: #FF6B35; /* Logo Orange */
+  --color-secondary-light: #FF8E61;
+  --color-secondary-dark: #D94E1B;
+  --color-secondary-contrast: #E54E1B;
+  --color-accent-yellow: #FFD200; /* Vibrant Yellow from logo colors */
+  --color-accent: #F0F9FF; /* Light blue tint */
+  --color-background: #FFFFFF;
+  --color-charcoal: #111827;
+  --color-charcoal-light: #4B5563;
 
   --font-display: "DM Serif Display", serif;
   --font-sans: "Nunito", sans-serif;

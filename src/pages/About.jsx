@@ -58,8 +58,8 @@ export default function About() {
                             className="space-y-8"
                         >
                             <SectionLabel label="Our Story" />
-                            <h2 className="text-4xl md:text-5xl text-[#1A3A6B] font-display">
-                                Born from a Calling. <span className="italic">Built for Impact.</span>
+                            <h2 className="text-4xl md:text-5xl text-primary font-display">
+                                Born from a Calling. <span className="italic text-secondary">Built for Impact.</span>
                             </h2>
                             <div className="space-y-6 text-gray-500 font-serif leading-relaxed text-lg">
                                 <p>
@@ -88,14 +88,14 @@ export default function About() {
                                 />
                             </div>
                             {/* Decorative element */}
-                            <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-[#D4A017] rounded-full blur-3xl opacity-20 -z-10" />
+                            <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-secondary rounded-full blur-3xl opacity-20 -z-10" />
                         </motion.div>
                     </div>
                 </div>
             </section>
 
             {/* Mission Vision Detailed */}
-            <section className="py-24 bg-[#FDF6EC]/50">
+            <section className="py-24 bg-accent/30">
                 <div className="container-custom">
                     <div className="grid grid-cols-1 gap-8">
                         {/* Mission Card */}
@@ -103,12 +103,12 @@ export default function About() {
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="bg-[#1A3A6B] text-white p-12 md:p-16 rounded-[3rem] shadow-xl overflow-hidden relative"
+                            className="bg-primary text-white p-12 md:p-16 rounded-[3rem] shadow-xl overflow-hidden relative"
                         >
                             <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-x-1/2 -translate-y-1/2" />
                             <div className="relative z-10 flex flex-col md:flex-row gap-8 items-center md:items-start text-center md:text-left">
                                 <div className="w-20 h-20 bg-white/10 rounded-2xl flex items-center justify-center shrink-0">
-                                    <Target size={40} className="text-[#D4A017]" />
+                                    <Target size={40} className="text-accent-yellow" />
                                 </div>
                                 <div>
                                     <h3 className="text-3xl font-display mb-6">Our Mission</h3>
@@ -125,14 +125,14 @@ export default function About() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.1 }}
-                            className="bg-white border-2 border-[#D4A017]/20 p-12 md:p-16 rounded-[3rem] shadow-sm relative overflow-hidden"
+                            className="bg-white border-2 border-secondary/20 p-12 md:p-16 rounded-[3rem] shadow-sm relative overflow-hidden"
                         >
                             <div className="relative z-10 flex flex-col md:flex-row gap-8 items-center md:items-start text-center md:text-left">
-                                <div className="w-20 h-20 bg-[#FDF6EC] rounded-2xl flex items-center justify-center shrink-0">
-                                    <Eye size={40} className="text-[#D4A017]" />
+                                <div className="w-20 h-20 bg-accent rounded-2xl flex items-center justify-center shrink-0">
+                                    <Eye size={40} className="text-secondary" />
                                 </div>
                                 <div>
-                                    <h3 className="text-3xl font-display text-[#1A3A6B] mb-6">Our Vision</h3>
+                                    <h3 className="text-3xl font-display text-primary mb-6">Our Vision</h3>
                                     <p className="text-xl text-gray-500 font-serif leading-relaxed">
                                         To raise resilient, purpose-driven generations transformed through access to education, leadership systems, mentorship, inclusive housing solutions, and faith-based values.
                                     </p>
@@ -155,10 +155,10 @@ export default function About() {
                                         transition={{ delay: i * 0.1 }}
                                         className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow"
                                     >
-                                        <div className="w-12 h-12 bg-[#FDF6EC] rounded-xl flex items-center justify-center text-[#D4A017] mb-6">
+                                        <div className="w-12 h-12 bg-accent rounded-xl flex items-center justify-center text-secondary mb-6">
                                             {v.icon}
                                         </div>
-                                        <h4 className="text-xl font-display text-[#1A3A6B] mb-4">{v.title}</h4>
+                                        <h4 className="text-xl font-display text-primary mb-4">{v.title}</h4>
                                         <p className="text-gray-500 font-serif text-sm leading-relaxed">{v.description}</p>
                                     </motion.div>
                                 ))}
@@ -173,8 +173,8 @@ export default function About() {
                 <div className="container-custom">
                     <div className="text-center mb-16 space-y-4">
                         <SectionLabel label="Our Leadership" />
-                        <h2 className="text-4xl md:text-5xl text-[#1A3A6B] font-display">
-                            Guided by Vision. <span className="italic">Governed with Excellence.</span>
+                        <h2 className="text-4xl md:text-5xl text-primary font-display">
+                            Guided by Vision. <span className="italic text-secondary">Governed with Excellence.</span>
                         </h2>
                     </div>
 
@@ -184,7 +184,7 @@ export default function About() {
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="bg-[#FDF6EC] p-8 md:p-10 rounded-[3rem] border border-[#D4A017]/10 flex flex-col"
+                            className="bg-accent p-8 md:p-10 rounded-[3rem] border border-secondary/10 flex flex-col"
                         >
                             <div className="flex flex-col items-center text-center">
                                 <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-xl shrink-0 mb-6">
@@ -194,8 +194,8 @@ export default function About() {
                                         className="w-full h-full object-cover object-top"
                                     />
                                 </div>
-                                <h3 className="text-xl md:text-2xl font-display text-[#1A3A6B] mb-1">Sandra Emmanuel - Akomolafe</h3>
-                                <p className="text-[#B5840D] font-bold text-[10px] uppercase tracking-widest mb-6">Founder & President</p>
+                                <h3 className="text-xl md:text-2xl font-display text-primary mb-1">Sandra Emmanuel - Akomolafe</h3>
+                                <p className="text-secondary font-bold text-[10px] uppercase tracking-widest mb-6">Founder & President</p>
                                 <p className="text-gray-600 font-serif leading-relaxed italic text-sm">
                                     "Provides vision stewardship, strategic oversight, and institutional direction. The Foundation exists to fulfill a divine mandate — and every program, partnership, and initiative is built on that foundation."
                                 </p>
@@ -211,15 +211,15 @@ export default function About() {
                             className="bg-white p-8 md:p-10 rounded-[3rem] border border-gray-100 shadow-sm flex flex-col"
                         >
                             <div className="flex flex-col items-center text-center">
-                                <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-[#FDF6EC] shadow-xl shrink-0 mb-6">
+                                <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-accent shadow-xl shrink-0 mb-6">
                                     <img
                                         src={vpImg}
                                         alt="Ayomide Akomolafe - Vice President"
                                         className="w-full h-full object-cover object-top"
                                     />
                                 </div>
-                                <h3 className="text-xl md:text-2xl font-display text-[#1A3A6B] mb-1">Ayomide Akomolafe</h3>
-                                <p className="text-[#B5840D] font-bold text-[10px] uppercase tracking-widest mb-6">Vice President</p>
+                                <h3 className="text-xl md:text-2xl font-display text-primary mb-1">Ayomide Akomolafe</h3>
+                                <p className="text-secondary font-bold text-[10px] uppercase tracking-widest mb-6">Vice President</p>
                                 <p className="text-gray-600 font-serif leading-relaxed italic text-sm">
                                     "A marketing strategist driving impact and sustainable growth across communities and businesses."
                                 </p>
@@ -242,9 +242,9 @@ export default function About() {
                                         className="w-full h-full object-cover object-top"
                                     />
                                 </div>
-                                <h3 className="text-xl md:text-2xl font-display text-[#1A3A6B] mb-1">Dr. Georgette Prime-Godwin, PhD</h3>
-                                <p className="text-[#B5840D] font-bold text-[10px] uppercase tracking-widest mb-1">CEO & Founder, Godwin International Group LLC</p>
-                                <p className="text-[#B5840D] font-bold text-[10px] uppercase tracking-widest mb-6">Patron — Bermuda</p>
+                                <h3 className="text-xl md:text-2xl font-display text-primary mb-1">Dr. Georgette Prime-Godwin, PhD</h3>
+                                <p className="text-secondary font-bold text-[10px] uppercase tracking-widest mb-1">CEO & Founder, Godwin International Group LLC</p>
+                                <p className="text-secondary font-bold text-[10px] uppercase tracking-widest mb-6">Patron — Bermuda</p>
                                 <p className="text-gray-600 font-serif leading-relaxed text-sm italic">
                                     "Dr. Georgette Prime-Godwin is a respected leadership scholar and philanthropic advocate committed to advancing transformational initiatives globally. As an early patron of The Blue Ribbon Foundation, they support its mission through strategic guidance, philanthropic leadership, and the mobilization of broader support networks from Bermuda and beyond."
                                 </p>
@@ -268,12 +268,12 @@ export default function About() {
             <Governance />
 
             {/* Governance Structure */}
-            <section className="py-24 bg-[#FDF6EC]/30">
+            <section className="py-24 bg-accent/30">
                 <div className="container-custom">
                     <div className="text-center mb-16 space-y-4">
                         <SectionLabel label="Our Structure" />
-                        <h2 className="text-4xl md:text-5xl text-[#1A3A6B] font-display">
-                            Built for <span className="italic">Accountability.</span>
+                        <h2 className="text-4xl md:text-5xl text-primary font-display">
+                            Built for <span className="italic text-secondary">Accountability.</span>
                         </h2>
                     </div>
 
@@ -295,10 +295,10 @@ export default function About() {
                                     transition={{ delay: i * 0.1 }}
                                     className="bg-white p-6 rounded-2xl border border-gray-100 flex items-center gap-4 shadow-sm hover:translate-y-[-4px] transition-transform"
                                 >
-                                    <div className="w-10 h-10 bg-[#1A3A6B]/5 rounded-lg flex items-center justify-center text-[#1A3A6B]">
+                                    <div className="w-10 h-10 bg-primary/5 rounded-lg flex items-center justify-center text-primary">
                                         {unit.icon}
                                     </div>
-                                    <span className="font-bold text-xs uppercase tracking-wider text-[#1A3A6B]">
+                                    <span className="font-bold text-xs uppercase tracking-wider text-primary">
                                         {unit.label}
                                     </span>
                                 </motion.div>
@@ -307,17 +307,17 @@ export default function About() {
 
                         <div className="mt-12 flex flex-col items-center">
                             <div className="w-px h-12 bg-gray-200" />
-                            <div className="px-8 py-4 bg-[#1A3A6B] text-white rounded-xl font-display text-lg shadow-lg">
+                            <div className="px-8 py-4 bg-primary text-white rounded-xl font-display text-lg shadow-lg">
                                 Founder & President
                             </div>
                             <div className="flex gap-16 mt-4">
                                 <div className="flex flex-col items-center">
                                     <div className="w-px h-8 bg-gray-200" />
-                                    <div className="px-4 py-2 border border-[#1A3A6B] text-[#1A3A6B] rounded-lg text-xs font-bold tracking-widest uppercase">Board of Trustees</div>
+                                    <div className="px-4 py-2 border border-primary text-primary rounded-lg text-xs font-bold tracking-widest uppercase">Board of Trustees</div>
                                 </div>
                                 <div className="flex flex-col items-center">
                                     <div className="w-px h-8 bg-gray-200" />
-                                    <div className="px-4 py-2 border border-[#1A3A6B] text-[#1A3A6B] rounded-lg text-xs font-bold tracking-widest uppercase">Patron (Advisory)</div>
+                                    <div className="px-4 py-2 border border-primary text-primary rounded-lg text-xs font-bold tracking-widest uppercase">Patron (Advisory)</div>
                                 </div>
                             </div>
                         </div>

@@ -66,25 +66,25 @@ export function ProgramGrid() {
             tagline: "SUSTAINABLE HOUSING FOR IMPACT.",
             description: "An ethical estate management model designed to fund our humanitarian work sustainably through affordable, inclusive housing solutions.",
             icon: <Home className="w-8 h-8" />,
-            color: "from-[#1A3A6B]/20 to-[#1A3A6B]/5",
-            iconColor: "text-[#1A3A6B]",
+            color: "from-primary/20 to-primary/5",
+            iconColor: "text-primary",
         },
     ];
 
     return (
-        <section id="programs" className="py-24 bg-[#FDF6EC]/30">
+        <section id="programs" className="py-24 bg-accent/30">
             <div className="container-custom">
                 <div className="text-center max-w-3xl mx-auto mb-16">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="inline-block px-4 py-1.5 bg-[#D4A017]/10 text-[#B5840D] rounded-full font-bold text-[10px] uppercase tracking-[0.3em] mb-6"
+                        className="inline-block px-4 py-1.5 bg-secondary/10 text-secondary rounded-full font-bold text-[10px] uppercase tracking-[0.3em] mb-6"
                     >
                         Our 6 Impact Pillars
                     </motion.div>
-                    <h2 className="text-4xl md:text-5xl mb-6 text-[#1A3A6B] font-display">
-                        Strategy Meets <span className="text-[#B5840D] italic">Spirituality.</span>
+                    <h2 className="text-4xl md:text-5xl mb-6 text-primary font-display">
+                        Strategy Meets <span className="text-secondary italic">Spirituality.</span>
                     </h2>
                     <p className="text-[#3F3F46] text-lg font-serif">
                         Six core areas of impact, each designed to transform lives and build a more inclusive, empowered society across Nigeria and beyond.
@@ -108,19 +108,19 @@ export function ProgramGrid() {
                                     {program.icon}
                                 </div>
 
-                                <h3 className="text-2xl font-display text-[#1A3A6B] mb-2">
+                                <h3 className="text-2xl font-display text-primary mb-2">
                                     {program.title}
                                 </h3>
-                                <p className="text-[#B5840D] font-bold text-[10px] uppercase tracking-[0.2em] mb-4">
+                                <p className="text-secondary font-bold text-[10px] uppercase tracking-[0.2em] mb-4">
                                     {program.tagline}
                                 </p>
                                 <p className="text-gray-500 text-sm leading-relaxed mb-8 font-serif">
                                     {program.description}
                                 </p>
 
-                                <Link to={`/programs/${program.id}`} className="flex items-center gap-2 text-[#1A3A6B] font-bold text-xs uppercase tracking-widest group/btn">
+                                <Link to={`/programs/${program.id}`} className="flex items-center gap-2 text-primary font-bold text-xs uppercase tracking-widest group/btn">
                                     Learn More
-                                    <div className="w-8 h-8 rounded-full border border-gray-100 flex items-center justify-center group-hover/btn:bg-[#1A3A6B] group-hover/btn:text-white transition-all">
+                                    <div className="w-8 h-8 rounded-full border border-gray-100 flex items-center justify-center group-hover/btn:bg-primary group-hover/btn:text-white transition-all">
                                         <ArrowUpRight size={14} />
                                     </div>
                                 </Link>
@@ -134,7 +134,7 @@ export function ProgramGrid() {
                     initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="bg-[#1A3A6B] rounded-[3rem] p-8 md:p-16 relative overflow-hidden shadow-2xl"
+                    className="bg-primary rounded-[3rem] p-8 md:p-16 relative overflow-hidden shadow-2xl"
                 >
                     {/* Decorative background element */}
                     <div className="absolute top-0 right-0 w-1/3 h-full bg-white/5 skew-x-12 translate-x-32" />
@@ -145,7 +145,7 @@ export function ProgramGrid() {
                                 Our Social Enterprise Arm
                             </div>
                             <h3 className="text-white text-4xl md:text-5xl mb-8 font-display leading-tight">
-                                The Blue City: <span className="text-[#D4A017]">Funding the Mission.</span>
+                                The Blue City: <span className="text-accent-yellow">Funding the Mission.</span>
                             </h3>
                             <p className="text-white/70 text-lg leading-relaxed mb-10 font-serif max-w-2xl">
                                 The Blue City is more than a housing project — it is an ethical engine for social change.
@@ -153,7 +153,7 @@ export function ProgramGrid() {
                                 our programs, The Blue City ensures Blue Ribbon Foundation remains self-sustaining and
                                 impactful for generations to come.
                             </p>
-                            <Link to="/programs/blue-city" className="bg-[#D4A017] text-white px-8 py-4 rounded-full font-bold text-sm flex items-center gap-2 hover:bg-[#C49007] transition-all transform hover:scale-105">
+                            <Link to="/programs/blue-city" className="bg-secondary text-white px-8 py-4 rounded-full font-bold text-sm flex items-center gap-2 hover:bg-secondary-dark transition-all transform hover:scale-105">
                                 Explore the Model
                                 <ArrowUpRight size={18} />
                             </Link>
@@ -167,17 +167,17 @@ export function ProgramGrid() {
                             transition={{ delay: 0.2 }}
                             className="bg-white rounded-[2rem] p-8 md:p-10 shadow-3xl relative"
                         >
-                            <h4 className="text-[#1A3A6B] font-display text-2xl mb-8">
+                            <h4 className="text-primary font-display text-2xl mb-8">
                                 How The Blue City Works
                             </h4>
 
                             <div className="space-y-8">
                                 <div className="flex gap-5">
-                                    <div className="w-12 h-12 bg-[#FDF6EC] rounded-xl flex items-center justify-center text-[#D4A017] shrink-0">
+                                    <div className="w-12 h-12 bg-accent rounded-xl flex items-center justify-center text-secondary shrink-0">
                                         <House size={24} />
                                     </div>
                                     <div>
-                                        <p className="text-[#1A3A6B] font-bold text-xs uppercase tracking-widest mb-1">Step 1 — Build</p>
+                                        <p className="text-primary font-bold text-xs uppercase tracking-widest mb-1">Step 1 — Build</p>
                                         <p className="text-gray-500 text-sm font-serif">
                                             Ethical, affordable housing estates developed for vulnerable families and youth.
                                         </p>
@@ -185,11 +185,11 @@ export function ProgramGrid() {
                                 </div>
 
                                 <div className="flex gap-5">
-                                    <div className="w-12 h-12 bg-[#FDF6EC] rounded-xl flex items-center justify-center text-[#D4A017] shrink-0">
+                                    <div className="w-12 h-12 bg-accent rounded-xl flex items-center justify-center text-secondary shrink-0">
                                         <CircleDollarSign size={24} />
                                     </div>
                                     <div>
-                                        <p className="text-[#1A3A6B] font-bold text-xs uppercase tracking-widest mb-1">Step 2 — Generate</p>
+                                        <p className="text-primary font-bold text-xs uppercase tracking-widest mb-1">Step 2 — Generate</p>
                                         <p className="text-gray-500 text-sm font-serif">
                                             Estate management creates sustainable income streams for the Foundation.
                                         </p>
@@ -197,11 +197,11 @@ export function ProgramGrid() {
                                 </div>
 
                                 <div className="flex gap-5">
-                                    <div className="w-12 h-12 bg-[#FDF6EC] rounded-xl flex items-center justify-center text-[#D4A017] shrink-0">
+                                    <div className="w-12 h-12 bg-accent rounded-xl flex items-center justify-center text-secondary shrink-0">
                                         <RefreshCcw size={24} />
                                     </div>
                                     <div>
-                                        <p className="text-[#1A3A6B] font-bold text-xs uppercase tracking-widest mb-1">Step 3 — Reinvest</p>
+                                        <p className="text-primary font-bold text-xs uppercase tracking-widest mb-1">Step 3 — Reinvest</p>
                                         <p className="text-gray-500 text-sm font-serif">
                                             100% of proceeds fund Blue Ribbon's humanitarian and youth programs.
                                         </p>
@@ -210,7 +210,7 @@ export function ProgramGrid() {
                             </div>
 
                             <div className="mt-10 pt-8 border-t border-gray-50 flex justify-center">
-                                <span className="inline-block px-4 py-2 border border-[#D4A017] text-[#D4A017] rounded-full font-bold text-[9px] uppercase tracking-[0.2em]">
+                                <span className="inline-block px-4 py-2 border border-secondary text-secondary rounded-full font-bold text-[9px] uppercase tracking-[0.2em]">
                                     A Social Enterprise Model
                                 </span>
                             </div>

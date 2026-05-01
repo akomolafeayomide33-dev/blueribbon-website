@@ -3,6 +3,7 @@ import { Menu, X, Heart } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import { cn } from "../../lib/utils";
+import logoImg from "../../assets/logo/logo-full.png";
 
 export function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -41,20 +42,11 @@ export function Navbar() {
             <div className="max-w-7xl mx-auto flex items-center justify-between">
                 {/* Logo */}
                 <Link to="/" className="flex items-center gap-3 group" aria-label="Blue Ribbon Foundation Home">
-                    <div className="w-10 h-10 bg-[#1A3A6B] rounded-xl flex items-center justify-center text-white font-display text-2xl transition-transform group-hover:scale-110 group-hover:rotate-3 shadow-lg shadow-[#1A3A6B]/10" aria-hidden="true">
-                        B
-                    </div>
-                    <div className="flex flex-col">
-                        <span className={cn(
-                            "font-display text-xl leading-none tracking-tight transition-colors",
-                            isScrolled || !isHome ? "text-[#1A3A6B]" : "text-[#1A3A6B]"
-                        )}>
-                            Blue Ribbon
-                        </span>
-                        <span className="text-[#B5840D] text-[10px] font-bold uppercase tracking-[0.2em] leading-none mt-1">
-                            Foundation
-                        </span>
-                    </div>
+                    <img 
+                        src={logoImg} 
+                        alt="Blue Ribbon Foundation Logo" 
+                        className="h-12 md:h-14 w-auto transition-transform group-hover:scale-105"
+                    />
                 </Link>
 
                 {/* Desktop Navigation */}
@@ -64,20 +56,20 @@ export function Navbar() {
                             key={link.name}
                             to={link.href}
                             className={cn(
-                                "text-[11px] font-bold uppercase tracking-[0.2em] transition-all hover:text-[#B5840D] relative group",
-                                location.pathname === link.href ? "text-[#B5840D]" : "text-[#1A3A6B]/70"
+                                "text-[11px] font-bold uppercase tracking-[0.2em] transition-all hover:text-secondary relative group",
+                                location.pathname === link.href ? "text-secondary" : "text-primary/70"
                             )}
                         >
                             {link.name}
                             <span className={cn(
-                                "absolute -bottom-1 left-0 w-0 h-0.5 bg-[#B5840D] transition-all group-hover:w-full",
+                                "absolute -bottom-1 left-0 w-0 h-0.5 bg-secondary transition-all group-hover:w-full",
                                 location.pathname === link.href ? "w-full" : ""
                             )} />
                         </Link>
                     ))}
                     <Link to="/contact">
                         <button 
-                            className="bg-[#D4A017] text-white px-7 py-3 rounded-full font-bold text-xs uppercase tracking-widest flex items-center gap-2 hover:bg-[#C49007] transition-all transform hover:scale-105 shadow-lg shadow-[#D4A017]/20"
+                            className="bg-secondary text-white px-7 py-3 rounded-full font-bold text-xs uppercase tracking-widest flex items-center gap-2 hover:bg-secondary-dark transition-all transform hover:scale-105 shadow-lg shadow-secondary/20"
                             aria-label="Partner With Us - Inquire Now"
                         >
                             Partner With Us
@@ -88,7 +80,7 @@ export function Navbar() {
 
                 {/* Mobile Menu Toggle */}
                 <button
-                    className="md:hidden text-[#1A3A6B] w-10 h-10 flex items-center justify-center bg-white/50 rounded-xl backdrop-blur-sm shadow-sm"
+                    className="md:hidden text-primary w-10 h-10 flex items-center justify-center bg-white/50 rounded-xl backdrop-blur-sm shadow-sm"
                     onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                     aria-label={mobileMenuOpen ? "Close Menu" : "Open Menu"}
                     aria-expanded={mobileMenuOpen}
@@ -108,7 +100,7 @@ export function Navbar() {
                         className="absolute top-8 right-8 w-12 h-12 flex items-center justify-center bg-gray-50 rounded-full"
                         onClick={() => setMobileMenuOpen(false)}
                     >
-                        <X size={24} className="text-[#1A3A6B]" />
+                        <X size={24} className="text-primary" />
                     </button>
 
                     <div className="space-y-8">
@@ -118,14 +110,14 @@ export function Navbar() {
                                 to={link.href}
                                 className={cn(
                                     "block text-4xl font-display transition-colors",
-                                    location.pathname === link.href ? "text-[#D4A017]" : "text-[#1A3A6B]"
+                                    location.pathname === link.href ? "text-secondary" : "text-primary"
                                 )}
                             >
                                 {link.name}
                             </Link>
                         ))}
                         <div className="pt-8 border-t border-gray-100">
-                            <Link to="/contact" className="bg-[#D4A017] text-white w-full py-5 rounded-2xl font-bold text-lg flex items-center justify-center gap-3">
+                            <Link to="/contact" className="bg-secondary text-white w-full py-5 rounded-2xl font-bold text-lg flex items-center justify-center gap-3">
                                 <Heart size={20} fill="currentColor" />
                                 Partner With Us
                             </Link>

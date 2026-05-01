@@ -6,29 +6,29 @@ export function MissionSnapshot() {
         {
             title: "Our Mission",
             description: "To restore hope and unlock the potential of vulnerable children and teens through leadership, empowerment, and community-driven impact.",
-            icon: <Target size={32} className="text-[#D4A017]" />,
+            icon: <Target size={32} className="text-secondary" />,
             bgClass: "bg-white",
-            titleClass: "text-[#1A3A6B]",
+            titleClass: "text-primary",
             descClass: "text-gray-500",
-            iconBgClass: "bg-[#FDF6EC]",
+            iconBgClass: "bg-accent",
         },
         {
             title: "Our Vision",
             description: "A future where every child leads with purpose, and communities are transformed through the intersection of strategy and faith.",
-            icon: <Eye size={32} className="text-[#D4A017]" />,
+            icon: <Eye size={32} className="text-secondary" />,
             bgClass: "bg-white",
-            titleClass: "text-[#B5840D]",
+            titleClass: "text-secondary",
             descClass: "text-gray-500",
-            iconBgClass: "bg-[#FDF6EC]",
+            iconBgClass: "bg-accent",
         },
         {
             title: "Our Values",
             description: "Faith with excellence. Dignity and inclusion. Accountability and transparency. Empowerment over dependency. Innovation and sustainability.",
-            icon: <Shield size={32} className="text-[#D4A017]" />,
+            icon: <Shield size={32} className="text-secondary" />,
             bgClass: "bg-white",
-            titleClass: "text-[#1A3A6B]",
+            titleClass: "text-primary",
             descClass: "text-gray-500",
-            iconBgClass: "bg-[#FDF6EC]",
+            iconBgClass: "bg-accent",
         },
     ];
 
@@ -40,7 +40,7 @@ export function MissionSnapshot() {
                         initial={{ opacity: 0, y: 10 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#B5840D]"
+                        className="text-[10px] font-bold uppercase tracking-[0.3em] text-secondary"
                     >
                         Who We Are
                     </motion.span>
@@ -49,9 +49,9 @@ export function MissionSnapshot() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.1 }}
-                        className="text-4xl md:text-5xl text-[#1A3A6B] font-display"
+                        className="text-4xl md:text-5xl text-primary font-display"
                     >
-                        Heart for the <span className="italic">People.</span>
+                        Heart for the <span className="italic text-secondary">People.</span>
                     </motion.h2>
                 </div>
 

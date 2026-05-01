@@ -14,12 +14,12 @@ export function Governance() {
                         className="space-y-8"
                     >
                         <div>
-                            <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#D4A017] mb-4 block">
+                            <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-secondary mb-4 block">
                                 Governance & Transparency
                             </span>
-                            <h2 className="text-4xl md:text-5xl text-[#1A3A6B] font-display">
+                            <h2 className="text-4xl md:text-5xl text-primary font-display">
                                 Guided by Integrity. <br />
-                                <span className="italic">Governed by Excellence.</span>
+                                <span className="italic text-secondary">Governed by Excellence.</span>
                             </h2>
                         </div>
                         
@@ -29,20 +29,20 @@ export function Governance() {
 
                         <div className="space-y-6">
                             <div className="flex gap-4 items-start">
-                                <div className="w-10 h-10 bg-[#FDF6EC] rounded-xl flex items-center justify-center text-[#D4A017] shrink-0">
+                                <div className="w-10 h-10 bg-accent rounded-xl flex items-center justify-center text-primary shrink-0">
                                     <ShieldCheck size={20} />
                                 </div>
                                 <div>
-                                    <h4 className="text-[#1A3A6B] font-bold text-sm uppercase tracking-wider">Board formalization</h4>
+                                    <h4 className="text-primary font-bold text-sm uppercase tracking-wider">Board formalization</h4>
                                     <p className="text-gray-500 text-sm font-serif">Currently formalizing a Board of Trustees comprising leaders in law, finance, and social impact.</p>
                                 </div>
                             </div>
                             <div className="flex gap-4 items-start">
-                                <div className="w-10 h-10 bg-[#FDF6EC] rounded-xl flex items-center justify-center text-[#D4A017] shrink-0">
+                                <div className="w-10 h-10 bg-accent rounded-xl flex items-center justify-center text-primary shrink-0">
                                     <Globe size={20} />
                                 </div>
                                 <div>
-                                    <h4 className="text-[#1A3A6B] font-bold text-sm uppercase tracking-wider">Global SDG Alignment</h4>
+                                    <h4 className="text-primary font-bold text-sm uppercase tracking-wider">Global SDG Alignment</h4>
                                     <p className="text-gray-500 text-sm font-serif">Directly contributing to 6 United Nations Sustainable Development Goals for 2030.</p>
                                 </div>
                             </div>
@@ -55,7 +55,7 @@ export function Governance() {
                         viewport={{ once: true }}
                         className="relative"
                     >
-                        <div className="bg-[#1A3A6B] p-10 md:p-12 md:pb-20 rounded-[3rem] text-white relative overflow-hidden shadow-2xl">
+                        <div className="bg-primary p-10 md:p-12 md:pb-20 rounded-[3rem] text-white relative overflow-hidden shadow-2xl">
                             {/* Decorative background circle */}
                             <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-x-1/2 -translate-y-1/2" />
                             
@@ -68,13 +68,13 @@ export function Governance() {
                                     />
                                 </div>
                                 <div className="max-w-md">
-                                    <div className="flex items-center justify-center md:justify-start gap-2 text-[#D4A017] mb-2">
+                                    <div className="flex items-center justify-center md:justify-start gap-2 text-accent-yellow mb-2">
                                         <Award size={16} />
                                         <span className="font-bold text-[10px] uppercase tracking-widest">Our Distinguished Patron</span>
                                     </div>
                                     <h3 className="text-3xl font-display mb-2 text-white">Dr. Georgette Prime-Godwin, PhD</h3>
                                     <p className="text-white/60 text-xs font-bold uppercase tracking-widest mb-2">CEO & Founder, Godwin International Group LLC</p>
-                                    <p className="text-white/60 text-xs font-bold uppercase tracking-widest mb-6 underline decoration-[#D4A017] underline-offset-4">Patron — Bermuda</p>
+                                    <p className="text-white/60 text-xs font-bold uppercase tracking-widest mb-6 underline decoration-accent-yellow underline-offset-4">Patron — Bermuda</p>
                                     <p className="text-white/80 font-serif leading-relaxed italic">
                                         "Dr. Georgette Prime-Godwin is a respected leadership scholar and philanthropic advocate committed to advancing transformational initiatives globally. As an early patron of The Blue Ribbon Foundation, they support its mission through strategic guidance, philanthropic leadership, and the mobilization of broader support networks from Bermuda and beyond."
                                     </p>
@@ -84,8 +84,8 @@ export function Governance() {
                         
                         {/* Floating Credibility Tag */}
                         <div className="absolute -bottom-6 -right-2 md:right-4 bg-white px-6 py-3 rounded-2xl shadow-xl border border-gray-100 hidden md:block z-20">
-                            <p className="text-[#1A3A6B] font-bold text-[10px] uppercase tracking-tighter mb-0.5">Impact Credibility</p>
-                            <p className="text-[#D4A017] text-lg font-display">100% Stewardship</p>
+                            <p className="text-primary font-bold text-[10px] uppercase tracking-tighter mb-0.5">Impact Credibility</p>
+                            <p className="text-secondary text-lg font-display">100% Stewardship</p>
                         </div>
                     </motion.div>
                 </div>
