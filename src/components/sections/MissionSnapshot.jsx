@@ -6,29 +6,29 @@ export function MissionSnapshot() {
         {
             title: "Our Mission",
             description: "To restore hope and unlock the potential of vulnerable children and teens through leadership, empowerment, and community-driven impact.",
-            icon: <Target size={32} className="text-secondary" />,
+            icon: <Target size={32} className="text-primary" />,
             bgClass: "bg-white",
             titleClass: "text-primary",
             descClass: "text-gray-500",
-            iconBgClass: "bg-accent",
+            iconBgClass: "bg-primary/5",
         },
         {
             title: "Our Vision",
             description: "A future where every child leads with purpose, and communities are transformed through the intersection of strategy and faith.",
-            icon: <Eye size={32} className="text-secondary" />,
+            icon: <Eye size={32} className="text-primary" />,
             bgClass: "bg-white",
-            titleClass: "text-secondary",
+            titleClass: "text-primary",
             descClass: "text-gray-500",
-            iconBgClass: "bg-accent",
+            iconBgClass: "bg-primary/5",
         },
         {
             title: "Our Values",
             description: "Faith with excellence. Dignity and inclusion. Accountability and transparency. Empowerment over dependency. Innovation and sustainability.",
-            icon: <Shield size={32} className="text-secondary" />,
+            icon: <Shield size={32} className="text-primary" />,
             bgClass: "bg-white",
             titleClass: "text-primary",
             descClass: "text-gray-500",
-            iconBgClass: "bg-accent",
+            iconBgClass: "bg-primary/5",
         },
     ];
 
@@ -36,22 +36,22 @@ export function MissionSnapshot() {
         <section className="py-24 bg-white overflow-hidden" id="about">
             <div className="container-custom">
                 <div className="text-center mb-16 space-y-4">
-                    <motion.span
+                     <motion.span
                         initial={{ opacity: 0, y: 10 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="text-[10px] font-bold uppercase tracking-[0.3em] text-secondary"
+                        className="text-[10px] font-bold uppercase tracking-[0.3em] text-primary/40"
                     >
                         Who We Are
                     </motion.span>
-                    <motion.h2
+                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.1 }}
                         className="text-4xl md:text-5xl text-primary font-display"
                     >
-                        Heart for the <span className="italic text-secondary">People.</span>
+                        Heart for the <span className="italic font-normal">People.</span>
                     </motion.h2>
                 </div>
 

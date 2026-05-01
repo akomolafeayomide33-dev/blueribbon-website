@@ -19,14 +19,14 @@ export function Hero() {
                         transition={{ duration: 0.8, ease: "easeOut" }}
                         className="space-y-6 md:space-y-8"
                     >
-                        <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-secondary/10 text-secondary border border-secondary/10 rounded-full font-bold text-[10px] uppercase tracking-[0.2em] shadow-sm">
-                            <span className="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse" />
+                        <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-primary/5 text-primary/60 border border-primary/10 rounded-full font-bold text-[10px] uppercase tracking-[0.2em] shadow-sm">
+                            <span className="w-1.5 h-1.5 rounded-full bg-primary/20 animate-pulse" />
                             Founded December 2020
                         </div>
 
                         <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-primary leading-[1.05]">
                             Restoring Hope.<br />
-                            Unlocking <span className="text-accent-yellow italic font-normal">Potential.</span><br />
+                            Unlocking <span className="italic font-normal">Potential.</span><br />
                             Building Futures.
                         </h1>
 
@@ -51,11 +51,11 @@ export function Hero() {
                         </div>
 
                         <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                            <Link to="/get-involved" className="bg-secondary text-white px-8 py-4 rounded-full font-bold text-sm flex items-center justify-center gap-2 hover:bg-secondary-dark transition-all transform hover:scale-105 shadow-lg shadow-secondary/20 group">
+                            <Link to="/get-involved" className="bg-cta text-white px-8 py-4 rounded-full font-bold text-sm flex items-center justify-center gap-2 hover:opacity-90 transition-all transform hover:scale-105 shadow-lg shadow-cta/20 group">
                                 Donate Now
                                 <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
                             </Link>
-                            <Link to="/programs" className="border-2 border-primary text-primary px-8 py-4 rounded-full font-bold text-sm flex items-center justify-center gap-2 hover:bg-primary hover:text-white transition-all transform hover:scale-105 group">
+                            <Link to="/programs" className="border-2 border-primary/20 text-primary px-8 py-4 rounded-full font-bold text-sm flex items-center justify-center gap-2 hover:bg-primary hover:text-white transition-all transform hover:scale-105 group">
                                 Our Programs
                                 <ChevronRight size={18} className="transition-transform group-hover:translate-x-1" />
                             </Link>
@@ -87,7 +87,7 @@ export function Hero() {
                                 transition={{ delay: 1, duration: 0.6 }}
                                 className="absolute -bottom-6 left-2 sm:-left-6 md:-left-12 bg-white p-4 md:p-5 rounded-2xl shadow-2xl z-20 border border-gray-50 max-w-[85%] md:max-w-[240px]"
                             >
-                                <div className="w-8 h-8 bg-secondary/10 flex items-center justify-center rounded-lg text-secondary mb-3">
+                                <div className="w-8 h-8 bg-primary/5 flex items-center justify-center rounded-lg text-primary/40 mb-3">
                                     <Heart size={16} fill="currentColor" />
                                 </div>
                                 <p className="font-serif italic text-xs text-gray-700 leading-relaxed mb-4">
@@ -97,7 +97,7 @@ export function Hero() {
                         </div>
 
                         {/* Decorative background elements */}
-                        <div className="absolute -bottom-10 -right-10 w-72 h-72 bg-[#D4A017]/5 rounded-full blur-[100px] -z-10" />
+                        <div className="absolute -bottom-10 -right-10 w-72 h-72 bg-primary/5 rounded-full blur-[100px] -z-10" />
                     </motion.div>
                 </div>
             </div>

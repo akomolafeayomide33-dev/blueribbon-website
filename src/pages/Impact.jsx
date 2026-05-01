@@ -93,9 +93,9 @@ export default function Impact() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: i * 0.1 }}
-                                className="p-10 rounded-[2.5rem] bg-[#FDF6EC] border border-gray-100"
+                                className="p-10 rounded-[2.5rem] bg-primary/5 border border-primary/5"
                             >
-                                <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-secondary mx-auto mb-6 shadow-sm">
+                                <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-primary/40 mx-auto mb-6 shadow-sm">
                                     {stat.icon}
                                 </div>
                                 <h3 className="text-4xl font-display text-primary mb-2">{stat.val}</h3>
@@ -112,7 +112,7 @@ export default function Impact() {
                     <div className="text-center space-y-6 mb-20">
                         <SectionLabel label="Our History" />
                         <h2 className="text-4xl md:text-5xl text-primary font-display">
-                            A Record of <span className="italic text-secondary">Service.</span>
+                            A Record of <span className="italic font-normal">Service.</span>
                         </h2>
                     </div>
 
@@ -136,7 +136,7 @@ export default function Impact() {
                                                     {item.date}
                                                 </span>
                                             ) : (
-                                                <span className="text-secondary font-bold text-xs uppercase tracking-widest">
+                                                 <span className="text-primary/60 font-bold text-xs uppercase tracking-widest">
                                                     {item.date}
                                                 </span>
                                             )}
@@ -144,9 +144,9 @@ export default function Impact() {
                                         <h3 className="text-3xl font-display text-primary">{item.title}</h3>
                                         <p className="text-gray-500 font-serif text-base leading-relaxed">{item.description}</p>
 
-                                        {item.status === "upcoming" && (
-                                            <div className="bg-white p-6 rounded-2xl border border-dashed border-secondary/30 mt-4">
-                                                <p className="text-[#1A3A6B]/60 font-serif text-sm italic">
+                                         {item.status === "upcoming" && (
+                                            <div className="bg-white p-6 rounded-2xl border border-dashed border-primary/10 mt-4">
+                                                <p className="text-primary/40 font-serif text-sm italic">
                                                     This initiative is currently in the planning phase. Stay tuned for updates as we prepare to launch.
                                                 </p>
                                             </div>
@@ -158,9 +158,9 @@ export default function Impact() {
                                         {item.images.length > 0 ? (
                                             <ImageGallery images={item.images} title={item.title} />
                                         ) : (
-                                            <div className="aspect-[16/10] bg-white rounded-3xl border-2 border-dashed border-gray-200 flex flex-col items-center justify-center gap-4">
-                                                <div className="w-16 h-16 bg-accent rounded-2xl flex items-center justify-center">
-                                                    <ImageIcon size={28} className="text-secondary/40" />
+                                             <div className="aspect-[16/10] bg-white rounded-3xl border-2 border-dashed border-gray-100 flex flex-col items-center justify-center gap-4">
+                                                <div className="w-16 h-16 bg-primary/5 rounded-2xl flex items-center justify-center">
+                                                    <ImageIcon size={28} className="text-primary/20" />
                                                 </div>
                                                 <p className="text-[#1A3A6B]/30 font-bold text-xs uppercase tracking-widest">Coming Soon</p>
                                             </div>
@@ -180,7 +180,7 @@ export default function Impact() {
                         <div className="lg:w-1/2 space-y-8">
                             <SectionLabel label="Global Goals" />
                             <h2 className="text-4xl md:text-5xl text-primary font-display">
-                                Aligned with the <span className="italic text-secondary">World's Agenda.</span>
+                                Aligned with the <span className="italic font-normal">World's Agenda.</span>
                             </h2>
                             <p className="text-gray-500 font-serif text-lg leading-relaxed">
                                 Our work isn't just local; it contributes directly to the United Nations Sustainable Development Goals (SDGs),
@@ -189,7 +189,7 @@ export default function Impact() {
                             <div className="space-y-4 pt-4">
                                 {sdgs.map((sdg) => (
                                     <div key={sdg.id} className="flex gap-4 items-start">
-                                        <CheckCircle2 size={20} className="text-secondary shrink-0 mt-1" />
+                                        <CheckCircle2 size={20} className="text-primary/40 shrink-0 mt-1" />
                                         <div>
                                             <p className="text-primary font-bold text-sm uppercase tracking-wide">Goal {sdg.id}: {sdg.title}</p>
                                             <p className="text-gray-500 text-sm font-serif">{sdg.desc}</p>
@@ -210,8 +210,8 @@ export default function Impact() {
                                     ))}
                                 </div>
                             </div>
-                            {/* Decorative glow */}
-                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-secondary/5 rounded-full blur-[100px] -z-10" />
+                             {/* Decorative glow */}
+                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-primary/5 rounded-full blur-[100px] -z-10" />
                         </div>
                     </div>
                 </div>
@@ -263,12 +263,12 @@ function ImageGallery({ images, title }) {
             {/* Thumbnail Strip */}
             <div className="flex gap-3 overflow-x-auto pb-2">
                 {images.map((img, idx) => (
-                    <button
+                         <button
                         key={idx}
                         onClick={() => setActiveIndex(idx)}
                         className={`shrink-0 w-20 h-16 rounded-xl overflow-hidden border-2 transition-all duration-200 ${
                             idx === activeIndex
-                                ? "border-secondary shadow-md scale-105"
+                                ? "border-primary shadow-md scale-105"
                                 : "border-transparent opacity-60 hover:opacity-100"
                         }`}
                     >

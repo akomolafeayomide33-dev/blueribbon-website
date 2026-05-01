@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 import { PageHero } from "../components/shared/PageHero";
 import { SectionLabel } from "../components/shared/SectionLabel";
 import { Target, Eye, Shield, Users, BarChart3, Globe, ShieldCheck, Cpu } from "lucide-react";
-import founderImg from "../assets/images/president_sandra_new.jpg";
+import founderImg from "../assets/images/president_sandra.png";
 import vpImg from "../assets/images/Vice President.png";
-import patronImg from "../assets/images/patron_georgette.jpg";
+import patronImg from "../assets/images/patron_gorgetter.png";
 import communityImg from "../assets/images/community_impact_outreach_1773416174071.jpg";
 import teensImg from "../assets/images/nigerian_teens_empowerment_1773416132724.png";
 import { Governance } from "../components/sections/Governance";
@@ -59,7 +59,7 @@ export default function About() {
                         >
                             <SectionLabel label="Our Story" />
                             <h2 className="text-4xl md:text-5xl text-primary font-display">
-                                Born from a Calling. <span className="italic text-secondary">Built for Impact.</span>
+                                Born from a Calling. <span className="italic font-normal">Built for Impact.</span>
                             </h2>
                             <div className="space-y-6 text-gray-500 font-serif leading-relaxed text-lg">
                                 <p>
@@ -80,22 +80,22 @@ export default function About() {
                             viewport={{ once: true }}
                             className="relative"
                         >
-                            <div className="aspect-square rounded-[3rem] overflow-hidden shadow-2xl">
+                             <div className="aspect-square rounded-[3rem] overflow-hidden shadow-2xl border-4 border-white">
                                 <img
                                     src={communityImg}
                                     alt="Nigerian Community Impact"
-                                    className="w-full h-full object-cover grayscale-[10%] hover:grayscale-0 transition-all duration-700"
+                                    className="w-full h-full object-cover contrast-[1.1]"
                                 />
                             </div>
                             {/* Decorative element */}
-                            <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-secondary rounded-full blur-3xl opacity-20 -z-10" />
+                            <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-primary rounded-full blur-3xl opacity-5 -z-10" />
                         </motion.div>
                     </div>
                 </div>
             </section>
 
             {/* Mission Vision Detailed */}
-            <section className="py-24 bg-accent/30">
+            <section className="py-20 bg-gray-50">
                 <div className="container-custom">
                     <div className="grid grid-cols-1 gap-8">
                         {/* Mission Card */}
@@ -108,7 +108,7 @@ export default function About() {
                             <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-x-1/2 -translate-y-1/2" />
                             <div className="relative z-10 flex flex-col md:flex-row gap-8 items-center md:items-start text-center md:text-left">
                                 <div className="w-20 h-20 bg-white/10 rounded-2xl flex items-center justify-center shrink-0">
-                                    <Target size={40} className="text-accent-yellow" />
+                                    <Target size={40} className="text-white" />
                                 </div>
                                 <div>
                                     <h3 className="text-3xl font-display mb-6">Our Mission</h3>
@@ -120,16 +120,16 @@ export default function About() {
                         </motion.div>
 
                         {/* Vision Card */}
-                        <motion.div
+                         <motion.div
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.1 }}
-                            className="bg-white border-2 border-secondary/20 p-12 md:p-16 rounded-[3rem] shadow-sm relative overflow-hidden"
+                            className="bg-white border-2 border-primary/5 p-12 md:p-16 rounded-[3rem] shadow-sm relative overflow-hidden"
                         >
                             <div className="relative z-10 flex flex-col md:flex-row gap-8 items-center md:items-start text-center md:text-left">
-                                <div className="w-20 h-20 bg-accent rounded-2xl flex items-center justify-center shrink-0">
-                                    <Eye size={40} className="text-secondary" />
+                                <div className="w-20 h-20 bg-primary/5 rounded-2xl flex items-center justify-center shrink-0">
+                                    <Eye size={40} className="text-primary" />
                                 </div>
                                 <div>
                                     <h3 className="text-3xl font-display text-primary mb-6">Our Vision</h3>
@@ -155,7 +155,7 @@ export default function About() {
                                         transition={{ delay: i * 0.1 }}
                                         className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow"
                                     >
-                                        <div className="w-12 h-12 bg-accent rounded-xl flex items-center justify-center text-secondary mb-6">
+                                         <div className="w-12 h-12 bg-primary/5 rounded-xl flex items-center justify-center text-primary mb-6">
                                             {v.icon}
                                         </div>
                                         <h4 className="text-xl font-display text-primary mb-4">{v.title}</h4>
@@ -169,33 +169,33 @@ export default function About() {
             </section>
 
             {/* Leadership Section */}
-            <section className="py-24 bg-white">
+            <section className="py-20 bg-white">
                 <div className="container-custom">
-                    <div className="text-center mb-16 space-y-4">
+                     <div className="text-center mb-16 space-y-4">
                         <SectionLabel label="Our Leadership" />
                         <h2 className="text-4xl md:text-5xl text-primary font-display">
-                            Guided by Vision. <span className="italic text-secondary">Governed with Excellence.</span>
+                            Guided by Vision. <span className="italic font-normal">Governed with Excellence.</span>
                         </h2>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {/* Founder Card */}
-                        <motion.div
+                         <motion.div
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="bg-accent p-8 md:p-10 rounded-[3rem] border border-secondary/10 flex flex-col"
+                            className="bg-primary/5 p-8 md:p-10 rounded-[3rem] border border-primary/5 flex flex-col"
                         >
                             <div className="flex flex-col items-center text-center">
-                                <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-xl shrink-0 mb-6">
+                                <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-white shadow-xl shrink-0 mb-6 bg-white">
                                     <img
                                         src={founderImg}
                                         alt="Sandra Emmanuel - Akomolafe - Founder"
-                                        className="w-full h-full object-cover object-top"
+                                        className="w-full h-full object-contain object-center scale-110"
                                     />
                                 </div>
-                                <h3 className="text-xl md:text-2xl font-display text-primary mb-1">Sandra Emmanuel - Akomolafe</h3>
-                                <p className="text-secondary font-bold text-[10px] uppercase tracking-widest mb-6">Founder & President</p>
+                                 <h3 className="text-xl md:text-2xl font-display text-primary mb-1">Sandra Emmanuel - Akomolafe</h3>
+                                <p className="text-primary/60 font-bold text-[10px] uppercase tracking-widest mb-6">Founder & President</p>
                                 <p className="text-gray-600 font-serif leading-relaxed italic text-sm">
                                     "Provides vision stewardship, strategic oversight, and institutional direction. The Foundation exists to fulfill a divine mandate — and every program, partnership, and initiative is built on that foundation."
                                 </p>
@@ -211,15 +211,15 @@ export default function About() {
                             className="bg-white p-8 md:p-10 rounded-[3rem] border border-gray-100 shadow-sm flex flex-col"
                         >
                             <div className="flex flex-col items-center text-center">
-                                <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-accent shadow-xl shrink-0 mb-6">
+                                <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-gray-50 shadow-xl shrink-0 mb-6">
                                     <img
                                         src={vpImg}
                                         alt="Ayomide Akomolafe - Vice President"
-                                        className="w-full h-full object-cover object-top"
+                                        className="w-full h-full object-cover object-center"
                                     />
                                 </div>
-                                <h3 className="text-xl md:text-2xl font-display text-primary mb-1">Ayomide Akomolafe</h3>
-                                <p className="text-secondary font-bold text-[10px] uppercase tracking-widest mb-6">Vice President</p>
+                                 <h3 className="text-xl md:text-2xl font-display text-primary mb-1">Ayomide Akomolafe</h3>
+                                <p className="text-primary/60 font-bold text-[10px] uppercase tracking-widest mb-6">Vice President</p>
                                 <p className="text-gray-600 font-serif leading-relaxed italic text-sm">
                                     "A marketing strategist driving impact and sustainable growth across communities and businesses."
                                 </p>
@@ -235,16 +235,16 @@ export default function About() {
                             className="bg-white p-8 md:p-10 rounded-[3rem] border border-gray-100 shadow-sm flex flex-col"
                         >
                             <div className="flex flex-col items-center text-center">
-                                <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-[#FDF6EC] shadow-xl shrink-0 mb-6">
+                                <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-gray-50 shadow-xl shrink-0 mb-6">
                                     <img
                                         src={patronImg}
                                         alt="Dr. Georgette Prime-Godwin, PhD"
-                                        className="w-full h-full object-cover object-top"
+                                        className="w-full h-full object-contain object-center scale-105"
                                     />
                                 </div>
-                                <h3 className="text-xl md:text-2xl font-display text-primary mb-1">Dr. Georgette Prime-Godwin, PhD</h3>
-                                <p className="text-secondary font-bold text-[10px] uppercase tracking-widest mb-1">CEO & Founder, Godwin International Group LLC</p>
-                                <p className="text-secondary font-bold text-[10px] uppercase tracking-widest mb-6">Patron — Bermuda</p>
+                                 <h3 className="text-xl md:text-2xl font-display text-primary mb-1">Dr. Georgette Prime-Godwin, PhD</h3>
+                                <p className="text-primary/60 font-bold text-[10px] uppercase tracking-widest mb-1">CEO & Founder, Godwin International Group LLC</p>
+                                <p className="text-primary/60 font-bold text-[10px] uppercase tracking-widest mb-6">Patron — Bermuda</p>
                                 <p className="text-gray-600 font-serif leading-relaxed text-sm italic">
                                     "Dr. Georgette Prime-Godwin is a respected leadership scholar and philanthropic advocate committed to advancing transformational initiatives globally. As an early patron of The Blue Ribbon Foundation, they support its mission through strategic guidance, philanthropic leadership, and the mobilization of broader support networks from Bermuda and beyond."
                                 </p>
@@ -256,9 +256,9 @@ export default function About() {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="mt-12 p-8 bg-gray-50 rounded-[2rem] border border-dashed border-gray-300 text-center"
+                        className="mt-12 p-8 bg-gray-50 rounded-[2rem] border border-dashed border-gray-200 text-center"
                     >
-                        <p className="text-[#3F3F46] font-serif italic">
+                        <p className="text-primary font-serif italic">
                             "Our Board of Trustees is currently being formalized. We are recruiting distinguished leaders in governance, finance, law, and social development to ensure world-class oversight."
                         </p>
                     </motion.div>
@@ -268,12 +268,12 @@ export default function About() {
             <Governance />
 
             {/* Governance Structure */}
-            <section className="py-24 bg-accent/30">
+            <section className="py-20 bg-gray-50">
                 <div className="container-custom">
-                    <div className="text-center mb-16 space-y-4">
+                     <div className="text-center mb-16 space-y-4">
                         <SectionLabel label="Our Structure" />
                         <h2 className="text-4xl md:text-5xl text-primary font-display">
-                            Built for <span className="italic text-secondary">Accountability.</span>
+                            Built for <span className="italic font-normal">Accountability.</span>
                         </h2>
                     </div>
 

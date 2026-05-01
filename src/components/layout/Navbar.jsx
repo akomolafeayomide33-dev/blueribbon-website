@@ -36,7 +36,7 @@ export function Navbar() {
         <header
             className={cn(
                 "fixed top-0 left-0 right-0 z-50 transition-all duration-500 px-4 md:px-8",
-                isScrolled || !isHome ? "bg-white/95 backdrop-blur-md py-4 shadow-sm" : "bg-transparent py-8"
+                isScrolled || !isHome ? "bg-white py-4 shadow-md" : "bg-white/90 py-6"
             )}
         >
             <div className="max-w-7xl mx-auto flex items-center justify-between">
@@ -56,20 +56,20 @@ export function Navbar() {
                             key={link.name}
                             to={link.href}
                             className={cn(
-                                "text-[11px] font-bold uppercase tracking-[0.2em] transition-all hover:text-secondary relative group",
-                                location.pathname === link.href ? "text-secondary" : "text-primary/70"
+                                "text-[11px] font-bold uppercase tracking-[0.2em] transition-all hover:text-primary relative group",
+                                location.pathname === link.href ? "text-primary" : "text-primary/60"
                             )}
                         >
                             {link.name}
                             <span className={cn(
-                                "absolute -bottom-1 left-0 w-0 h-0.5 bg-secondary transition-all group-hover:w-full",
+                                "absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full",
                                 location.pathname === link.href ? "w-full" : ""
                             )} />
                         </Link>
                     ))}
                     <Link to="/contact">
                         <button 
-                            className="bg-secondary text-white px-7 py-3 rounded-full font-bold text-xs uppercase tracking-widest flex items-center gap-2 hover:bg-secondary-dark transition-all transform hover:scale-105 shadow-lg shadow-secondary/20"
+                            className="bg-cta text-white px-7 py-3 rounded-full font-bold text-xs uppercase tracking-widest flex items-center gap-2 hover:opacity-90 transition-all transform hover:scale-105 shadow-lg shadow-cta/20"
                             aria-label="Partner With Us - Inquire Now"
                         >
                             Partner With Us
@@ -110,14 +110,14 @@ export function Navbar() {
                                 to={link.href}
                                 className={cn(
                                     "block text-4xl font-display transition-colors",
-                                    location.pathname === link.href ? "text-secondary" : "text-primary"
+                                    location.pathname === link.href ? "text-primary font-bold" : "text-primary/70"
                                 )}
                             >
                                 {link.name}
                             </Link>
                         ))}
                         <div className="pt-8 border-t border-gray-100">
-                            <Link to="/contact" className="bg-secondary text-white w-full py-5 rounded-2xl font-bold text-lg flex items-center justify-center gap-3">
+                            <Link to="/contact" className="bg-cta text-white w-full py-5 rounded-2xl font-bold text-lg flex items-center justify-center gap-3">
                                 <Heart size={20} fill="currentColor" />
                                 Partner With Us
                             </Link>

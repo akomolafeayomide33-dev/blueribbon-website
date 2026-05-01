@@ -21,8 +21,8 @@ export function ProgramGrid() {
             tagline: "DEFINING IDENTITY. DEVELOPING LEADERS.",
             description: "Empowering teenagers to navigate identity and build foundational leadership skills in an annual high-impact conference.",
             icon: <Users className="w-8 h-8" />,
-            color: "from-blue-500/20 to-blue-500/5",
-            iconColor: "text-blue-500",
+            color: "bg-prog-tiv/10",
+            iconColor: "text-prog-tiv",
         },
         {
             id: "gatekeepers",
@@ -30,8 +30,8 @@ export function ProgramGrid() {
             tagline: "RAISING MEN OF CHARACTER.",
             description: "Mentoring boys into responsible young men driven by integrity, discipline, and purpose through structured character development.",
             icon: <UserCheck className="w-8 h-8" />,
-            color: "from-indigo-600/20 to-indigo-600/5",
-            iconColor: "text-indigo-600",
+            color: "bg-prog-gatekeepers/10",
+            iconColor: "text-prog-gatekeepers",
         },
         {
             id: "liones",
@@ -39,8 +39,8 @@ export function ProgramGrid() {
             tagline: "EMPOWERING GIRLS TO LEAD.",
             description: "Providing girls with the tools, confidence, and vision to break barriers and step into societal leadership with excellence.",
             icon: <Sparkles className="w-8 h-8" />,
-            color: "from-amber-500/20 to-amber-500/5",
-            iconColor: "text-amber-500",
+            color: "bg-prog-lioness/10",
+            iconColor: "text-prog-lioness",
         },
         {
             id: "lots",
@@ -48,8 +48,8 @@ export function ProgramGrid() {
             tagline: "BRINGING RELIEF TO THE COMMUNITY.",
             description: "Our direct-action outreach arm providing essential educational materials, welfare support, and psychosocial encouragement to underserved communities.",
             icon: <HandHelping className="w-8 h-8" />,
-            color: "from-rose-500/20 to-rose-500/5",
-            iconColor: "text-rose-500",
+            color: "bg-prog-lots/10",
+            iconColor: "text-prog-lots",
         },
         {
             id: "accessible",
@@ -57,8 +57,8 @@ export function ProgramGrid() {
             tagline: "INCLUSION IS A COMMITMENT.",
             description: "Advocating for disability inclusion and providing direct support, emotional empowerment, and practical resources for children living with disabilities.",
             icon: <Accessibility className="w-8 h-8" />,
-            color: "from-teal-500/20 to-teal-500/5",
-            iconColor: "text-teal-500",
+            color: "bg-prog-accessible/10",
+            iconColor: "text-prog-accessible",
         },
         {
             id: "blue-city",
@@ -66,8 +66,8 @@ export function ProgramGrid() {
             tagline: "SUSTAINABLE HOUSING FOR IMPACT.",
             description: "An ethical estate management model designed to fund our humanitarian work sustainably through affordable, inclusive housing solutions.",
             icon: <Home className="w-8 h-8" />,
-            color: "from-primary/20 to-primary/5",
-            iconColor: "text-primary",
+            color: "bg-prog-bluecity/10",
+            iconColor: "text-prog-bluecity",
         },
     ];
 
@@ -79,12 +79,12 @@ export function ProgramGrid() {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="inline-block px-4 py-1.5 bg-secondary/10 text-secondary rounded-full font-bold text-[10px] uppercase tracking-[0.3em] mb-6"
+                        className="inline-block px-4 py-1.5 bg-primary/5 text-primary/60 rounded-full font-bold text-[10px] uppercase tracking-[0.3em] mb-6"
                     >
                         Our 6 Impact Pillars
                     </motion.div>
                     <h2 className="text-4xl md:text-5xl mb-6 text-primary font-display">
-                        Strategy Meets <span className="text-secondary italic">Spirituality.</span>
+                        Strategy Meets <span className="italic">Spirituality.</span>
                     </h2>
                     <p className="text-[#3F3F46] text-lg font-serif">
                         Six core areas of impact, each designed to transform lives and build a more inclusive, empowered society across Nigeria and beyond.
@@ -111,7 +111,7 @@ export function ProgramGrid() {
                                 <h3 className="text-2xl font-display text-primary mb-2">
                                     {program.title}
                                 </h3>
-                                <p className="text-secondary font-bold text-[10px] uppercase tracking-[0.2em] mb-4">
+                                <p className={cn("font-bold text-[10px] uppercase tracking-[0.2em] mb-4", program.iconColor)}>
                                     {program.tagline}
                                 </p>
                                 <p className="text-gray-500 text-sm leading-relaxed mb-8 font-serif">
@@ -145,7 +145,7 @@ export function ProgramGrid() {
                                 Our Social Enterprise Arm
                             </div>
                             <h3 className="text-white text-4xl md:text-5xl mb-8 font-display leading-tight">
-                                The Blue City: <span className="text-accent-yellow">Funding the Mission.</span>
+                                The Blue City: <span className="text-white/40 italic">Funding the Mission.</span>
                             </h3>
                             <p className="text-white/70 text-lg leading-relaxed mb-10 font-serif max-w-2xl">
                                 The Blue City is more than a housing project — it is an ethical engine for social change.
@@ -153,7 +153,7 @@ export function ProgramGrid() {
                                 our programs, The Blue City ensures Blue Ribbon Foundation remains self-sustaining and
                                 impactful for generations to come.
                             </p>
-                            <Link to="/programs/blue-city" className="bg-secondary text-white px-8 py-4 rounded-full font-bold text-sm flex items-center gap-2 hover:bg-secondary-dark transition-all transform hover:scale-105">
+                             <Link to="/programs/blue-city" className="bg-white/10 border border-white/20 text-white px-8 py-4 rounded-full font-bold text-sm flex items-center gap-2 hover:bg-white/20 transition-all transform hover:scale-105">
                                 Explore the Model
                                 <ArrowUpRight size={18} />
                             </Link>
@@ -172,8 +172,8 @@ export function ProgramGrid() {
                             </h4>
 
                             <div className="space-y-8">
-                                <div className="flex gap-5">
-                                    <div className="w-12 h-12 bg-accent rounded-xl flex items-center justify-center text-secondary shrink-0">
+                                 <div className="flex gap-5">
+                                    <div className="w-12 h-12 bg-prog-bluecity/10 rounded-xl flex items-center justify-center text-prog-bluecity shrink-0">
                                         <House size={24} />
                                     </div>
                                     <div>
@@ -184,8 +184,8 @@ export function ProgramGrid() {
                                     </div>
                                 </div>
 
-                                <div className="flex gap-5">
-                                    <div className="w-12 h-12 bg-accent rounded-xl flex items-center justify-center text-secondary shrink-0">
+                                 <div className="flex gap-5">
+                                    <div className="w-12 h-12 bg-prog-bluecity/10 rounded-xl flex items-center justify-center text-prog-bluecity shrink-0">
                                         <CircleDollarSign size={24} />
                                     </div>
                                     <div>
@@ -196,8 +196,8 @@ export function ProgramGrid() {
                                     </div>
                                 </div>
 
-                                <div className="flex gap-5">
-                                    <div className="w-12 h-12 bg-accent rounded-xl flex items-center justify-center text-secondary shrink-0">
+                                 <div className="flex gap-5">
+                                    <div className="w-12 h-12 bg-prog-bluecity/10 rounded-xl flex items-center justify-center text-prog-bluecity shrink-0">
                                         <RefreshCcw size={24} />
                                     </div>
                                     <div>
@@ -209,8 +209,8 @@ export function ProgramGrid() {
                                 </div>
                             </div>
 
-                            <div className="mt-10 pt-8 border-t border-gray-50 flex justify-center">
-                                <span className="inline-block px-4 py-2 border border-secondary text-secondary rounded-full font-bold text-[9px] uppercase tracking-[0.2em]">
+                             <div className="mt-10 pt-8 border-t border-gray-50 flex justify-center">
+                                <span className="inline-block px-4 py-2 border border-primary/10 text-primary/40 rounded-full font-bold text-[9px] uppercase tracking-[0.2em]">
                                     A Social Enterprise Model
                                 </span>
                             </div>

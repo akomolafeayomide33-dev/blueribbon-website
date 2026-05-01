@@ -29,7 +29,7 @@ export default function GetInvolved() {
             icon: <Heart size={28} />,
             btnText: "Ways to Give",
             anchor: "#donate",
-            color: "bg-rose-50 text-rose-600",
+            color: "bg-cta/10 text-cta",
         },
         {
             title: "Volunteer",
@@ -37,7 +37,7 @@ export default function GetInvolved() {
             icon: <Users size={28} />,
             btnText: "Join the Team",
             anchor: "#volunteer",
-            color: "bg-blue-50 text-blue-600",
+            color: "bg-primary/5 text-primary/60",
         },
         {
             title: "Partner",
@@ -45,7 +45,7 @@ export default function GetInvolved() {
             icon: <Handshake size={28} />,
             btnText: "Let's Talk",
             anchor: "#partner",
-            color: "bg-amber-50 text-amber-600",
+            color: "bg-cta/10 text-cta",
         },
     ];
 
@@ -75,9 +75,12 @@ export default function GetInvolved() {
                                 </div>
                                 <h3 className="text-2xl font-display text-[#1A3A6B] mb-4">{opt.title}</h3>
                                 <p className="text-gray-500 font-serif leading-relaxed mb-8">{opt.desc}</p>
-                                <a
+                                 <a
                                     href={opt.anchor}
-                                    className="inline-flex items-center gap-2 text-[#1A3A6B] font-bold text-sm uppercase tracking-widest hover:text-[#D4A017] transition-colors"
+                                    className={cn(
+                                        "inline-flex items-center gap-2 font-bold text-sm uppercase tracking-widest transition-colors",
+                                        opt.title === "Volunteer" ? "text-primary hover:opacity-60" : "text-cta hover:opacity-80"
+                                    )}
                                 >
                                     {opt.btnText}
                                     <ArrowRight size={16} />
@@ -94,22 +97,22 @@ export default function GetInvolved() {
                     <div className="max-w-4xl mx-auto">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                             <div className="space-y-8">
-                                <SectionLabel label="Financial Support" />
-                                <h2 className="text-4xl md:text-5xl text-[#1A3A6B] font-display">
-                                    Invest in <span className="italic">Humanity.</span>
+                                 <SectionLabel label="Financial Support" />
+                                <h2 className="text-4xl md:text-5xl text-primary font-display">
+                                    Invest in <span className="italic font-normal">Humanity.</span>
                                 </h2>
                                 <p className="text-gray-500 font-serif text-lg leading-relaxed">
                                     Blue Ribbon Foundation is committed to the highest standards of financial stewardship.
                                     100% of your donations go directly to program implementation and community support.
                                 </p>
-                                <div className="space-y-4">
+                                 <div className="space-y-4">
                                     {[
                                         "Transparent financial reporting",
                                         "Direct program impact",
                                         "Sustainable growth focus"
                                     ].map((item) => (
-                                        <div key={item} className="flex items-center gap-3 text-[#1A3A6B]/50 font-serif">
-                                            <CheckCircle2 size={18} className="text-[#D4A017]" />
+                                        <div key={item} className="flex items-center gap-3 text-primary/40 font-serif">
+                                            <CheckCircle2 size={18} className="text-primary/20" />
                                             {item}
                                         </div>
                                     ))}
@@ -131,18 +134,18 @@ export default function GetInvolved() {
                                         <p className="text-white/60 text-[10px] font-bold uppercase tracking-widest mb-1">Account Number</p>
                                         <div className="flex justify-between items-center">
                                             <p className="text-2xl font-display font-bold tracking-wider">1222455858</p>
-                                            <button
+                                             <button
                                                 onClick={() => copyToClipboard("1222455858")}
-                                                className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#D4A017] transition-all"
+                                                className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-cta transition-all"
                                             >
                                                 <Copy size={16} />
                                             </button>
                                         </div>
-                                        {copied && (
+                                         {copied && (
                                             <motion.div
                                                 initial={{ opacity: 0, y: 10 }}
                                                 animate={{ opacity: 1, y: 0 }}
-                                                className="absolute -top-8 right-0 bg-[#D4A017] text-white text-[10px] font-bold px-3 py-1 rounded-full"
+                                                className="absolute -top-8 right-0 bg-cta text-white text-[10px] font-bold px-3 py-1 rounded-full"
                                             >
                                                 COPIED
                                             </motion.div>
@@ -168,29 +171,29 @@ export default function GetInvolved() {
             <section className="py-24 bg-white overflow-hidden">
                 <div className="container-custom">
                     <div className="bg-gray-50 rounded-[4rem] p-12 md:p-20 flex flex-col items-center text-center space-y-10 relative">
-                        <div className="w-20 h-20 bg-white rounded-3xl flex items-center justify-center text-[#1A3A6B] shadow-xl rotate-3">
+                         <div className="w-20 h-20 bg-white rounded-3xl flex items-center justify-center text-primary shadow-xl rotate-3">
                             <ShieldCheck size={40} />
                         </div>
                         <div className="space-y-6 max-w-2xl">
-                            <h2 className="text-4xl md:text-5xl font-display text-[#1A3A6B]">Why Your Support <span className="italic text-[#D4A017]">Matters.</span></h2>
+                            <h2 className="text-4xl md:text-5xl font-display text-primary">Why Your Support <span className="italic font-normal">Matters.</span></h2>
                             <p className="text-gray-500 font-serif text-lg leading-relaxed">
                                 We don't just spend; we invest. Every naira or dollar contributed is carefully positioned to create self-sustaining impact.
                                 From mental health support for incarcerated youth to building ethical estates,
                                 your contribution transforms from a one-time gift into a lifetime of change.
                             </p>
                         </div>
-                        <div className="flex flex-wrap justify-center gap-12 pt-4">
+                         <div className="flex flex-wrap justify-center gap-12 pt-4">
                             <div className="flex flex-col items-center">
-                                <Globe size={24} className="text-[#D4A017] mb-2" />
-                                <span className="text-[10px] font-bold uppercase tracking-widest text-[#1A3A6B]">Global Standards</span>
+                                <Globe size={24} className="text-primary/20 mb-2" />
+                                <span className="text-[10px] font-bold uppercase tracking-widest text-primary/60">Global Standards</span>
                             </div>
                             <div className="flex flex-col items-center">
-                                <CheckCircle2 size={24} className="text-[#D4A017] mb-2" />
-                                <span className="text-[10px] font-bold uppercase tracking-widest text-[#1A3A6B]">Direct Impact</span>
+                                <CheckCircle2 size={24} className="text-primary/20 mb-2" />
+                                <span className="text-[10px] font-bold uppercase tracking-widest text-primary/60">Direct Impact</span>
                             </div>
                             <div className="flex flex-col items-center">
-                                <Users size={24} className="text-[#D4A017] mb-2" />
-                                <span className="text-[10px] font-bold uppercase tracking-widest text-[#1A3A6B]">Community Focused</span>
+                                <Users size={24} className="text-primary/20 mb-2" />
+                                <span className="text-[10px] font-bold uppercase tracking-widest text-primary/60">Community Focused</span>
                             </div>
                         </div>
 

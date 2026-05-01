@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ShieldCheck, Award, Globe } from "lucide-react";
-import patronImg from "../../assets/images/patron_georgette.jpg";
+import patronImg from "../../assets/images/patron_gorgetter.png";
 
 export function Governance() {
     return (
@@ -14,12 +14,12 @@ export function Governance() {
                         className="space-y-8"
                     >
                         <div>
-                            <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-secondary mb-4 block">
+                            <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-primary/40 mb-4 block">
                                 Governance & Transparency
                             </span>
                             <h2 className="text-4xl md:text-5xl text-primary font-display">
                                 Guided by Integrity. <br />
-                                <span className="italic text-secondary">Governed by Excellence.</span>
+                                <span className="italic font-normal">Governed by Excellence.</span>
                             </h2>
                         </div>
                         
@@ -29,7 +29,7 @@ export function Governance() {
 
                         <div className="space-y-6">
                             <div className="flex gap-4 items-start">
-                                <div className="w-10 h-10 bg-accent rounded-xl flex items-center justify-center text-primary shrink-0">
+                                <div className="w-10 h-10 bg-primary/5 rounded-xl flex items-center justify-center text-primary shrink-0">
                                     <ShieldCheck size={20} />
                                 </div>
                                 <div>
@@ -38,7 +38,7 @@ export function Governance() {
                                 </div>
                             </div>
                             <div className="flex gap-4 items-start">
-                                <div className="w-10 h-10 bg-accent rounded-xl flex items-center justify-center text-primary shrink-0">
+                                <div className="w-10 h-10 bg-primary/5 rounded-xl flex items-center justify-center text-primary shrink-0">
                                     <Globe size={20} />
                                 </div>
                                 <div>
@@ -60,21 +60,21 @@ export function Governance() {
                             <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-x-1/2 -translate-y-1/2" />
                             
                             <div className="relative z-10 flex flex-col md:flex-row gap-8 items-center md:items-start text-center md:text-left">
-                                <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white/10 shadow-xl shrink-0">
+                                <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-white/10 shadow-xl shrink-0 bg-white/5">
                                     <img
                                         src={patronImg}
                                         alt="Dr. Georgette Prime-Godwin, PhD"
-                                        className="w-full h-full object-cover object-top"
+                                        className="w-full h-full object-contain object-center scale-110"
                                     />
                                 </div>
-                                <div className="max-w-md">
-                                    <div className="flex items-center justify-center md:justify-start gap-2 text-accent-yellow mb-2">
+                                 <div className="max-w-md">
+                                    <div className="flex items-center justify-center md:justify-start gap-2 text-white/40 mb-2">
                                         <Award size={16} />
                                         <span className="font-bold text-[10px] uppercase tracking-widest">Our Distinguished Patron</span>
                                     </div>
                                     <h3 className="text-3xl font-display mb-2 text-white">Dr. Georgette Prime-Godwin, PhD</h3>
                                     <p className="text-white/60 text-xs font-bold uppercase tracking-widest mb-2">CEO & Founder, Godwin International Group LLC</p>
-                                    <p className="text-white/60 text-xs font-bold uppercase tracking-widest mb-6 underline decoration-accent-yellow underline-offset-4">Patron — Bermuda</p>
+                                    <p className="text-white/60 text-xs font-bold uppercase tracking-widest mb-6 underline decoration-white/20 underline-offset-4">Patron — Bermuda</p>
                                     <p className="text-white/80 font-serif leading-relaxed italic">
                                         "Dr. Georgette Prime-Godwin is a respected leadership scholar and philanthropic advocate committed to advancing transformational initiatives globally. As an early patron of The Blue Ribbon Foundation, they support its mission through strategic guidance, philanthropic leadership, and the mobilization of broader support networks from Bermuda and beyond."
                                     </p>
@@ -82,10 +82,10 @@ export function Governance() {
                             </div>
                         </div>
                         
-                        {/* Floating Credibility Tag */}
+                         {/* Floating Credibility Tag */}
                         <div className="absolute -bottom-6 -right-2 md:right-4 bg-white px-6 py-3 rounded-2xl shadow-xl border border-gray-100 hidden md:block z-20">
                             <p className="text-primary font-bold text-[10px] uppercase tracking-tighter mb-0.5">Impact Credibility</p>
-                            <p className="text-secondary text-lg font-display">100% Stewardship</p>
+                            <p className="text-primary/40 text-lg font-display">100% Stewardship</p>
                         </div>
                     </motion.div>
                 </div>

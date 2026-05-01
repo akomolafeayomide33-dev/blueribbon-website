@@ -6,7 +6,7 @@ export function Footer() {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="bg-primary-dark text-white pt-24 pb-12">
+        <footer className="bg-midnight text-white pt-24 pb-12">
             <div className="container-custom">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
                     {/* Brand Column */}
@@ -58,15 +58,15 @@ export function Footer() {
                         <h4 className="text-white font-display text-lg mb-8">Connect</h4>
                         <ul className="space-y-6 text-sm text-white/50 font-serif">
                             <li className="flex gap-4">
-                                <MapPin size={18} className="text-secondary shrink-0" />
+                                <MapPin size={18} className="text-white/40 shrink-0" />
                                 <span>Ogun State, Nigeria<br />Global Operations</span>
                             </li>
                             <li className="flex gap-4">
-                                <Phone size={18} className="text-secondary shrink-0" />
+                                <Phone size={18} className="text-white/40 shrink-0" />
                                 <span>+234 (0) 812 345 6789</span>
                             </li>
                             <li className="flex gap-4">
-                                <Mail size={18} className="text-secondary shrink-0" />
+                                <Mail size={18} className="text-white/40 shrink-0" />
                                 <span>info@blueribbonfoundation.org</span>
                             </li>
                         </ul>
@@ -74,7 +74,7 @@ export function Footer() {
                 </div>
 
                 <div className="border-t border-white/5 pt-12 flex flex-col md:flex-row justify-between items-center gap-8">
-                    <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-secondary animate-pulse">
+                    <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/40">
                         Spirituality with Strategy — Since 2020
                     </p>
                     <p className="text-[10px] uppercase tracking-widest text-white/20">
@@ -90,7 +90,7 @@ function SocialIcon({ icon, href }) {
     return (
         <a
             href={href}
-            className="w-10 h-10 rounded-xl bg-white/5 border border-white/5 flex items-center justify-center transition-all hover:bg-secondary hover:text-white"
+            className="w-10 h-10 rounded-xl bg-white/5 border border-white/5 flex items-center justify-center transition-all hover:bg-white/10 hover:text-white"
         >
             {icon}
         </a>
@@ -99,7 +99,7 @@ function SocialIcon({ icon, href }) {
 
 function FooterLink({ href, children }) {
     return (
-        <Link to={href} className="hover:text-secondary hover:translate-x-1 inline-block transition-all">
+        <Link to={href} className="hover:text-white hover:translate-x-1 inline-block transition-all">
             {children}
         </Link>
     );

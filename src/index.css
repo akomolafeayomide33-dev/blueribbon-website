@@ -3,18 +3,20 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #0096D1; /* Professional logo Blue */
-  --color-primary-light: #00AEEF; /* Bright logo Cyan */
-  --color-primary-dark: #005A8C;
-  --color-secondary: #FF6B35; /* Logo Orange */
-  --color-secondary-light: #FF8E61;
-  --color-secondary-dark: #D94E1B;
-  --color-secondary-contrast: #E54E1B;
-  --color-accent-yellow: #FFD200; /* Vibrant Yellow from logo colors */
-  --color-accent: #F0F9FF; /* Light blue tint */
+  --color-primary: #001F3F; /* Midnight Navy - Anchor Color */
+  --color-cta: #FF6B35;     /* Vibrant Orange - Exclusive for Partner/Donate */
+  
+  /* Program Signature Colors (The Functional Rainbow) */
+  --color-prog-tiv: #4169E1;        /* Royal Blue */
+  --color-prog-gatekeepers: #000080; /* Navy */
+  --color-prog-lioness: #E2725B;    /* Terracotta/Deep Coral */
+  --color-prog-lots: #B22222;       /* Muted Crimson */
+  --color-prog-accessible: #00A36C; /* Emerald Green */
+  --color-prog-bluecity: #1A3A6B;   /* Corporate Blue */
+
+  --color-accent: #F0F9FF;
   --color-background: #FFFFFF;
-  --color-charcoal: #111827;
-  --color-charcoal-light: #4B5563;
+  --color-midnight: #001F3F;
 
   --font-display: "DM Serif Display", serif;
   --font-sans: "Nunito", sans-serif;
@@ -23,7 +25,7 @@
 
 @layer base {
   body {
-    @apply bg-background text-charcoal font-serif antialiased;
+    @apply bg-background text-midnight font-serif antialiased;
   }
 
   h1,
@@ -32,13 +34,13 @@
   h4,
   h5,
   h6 {
-    @apply font-display text-primary;
+    @apply font-display text-midnight;
   }
 }
 
 @layer components {
   .btn-primary {
-    @apply bg-secondary text-white px-6 py-3 rounded-md font-bold transition-all hover:bg-secondary-light active:scale-95;
+    @apply bg-cta text-white px-6 py-3 rounded-md font-bold transition-all hover:opacity-90 active:scale-95;
   }
 
   .btn-outline {
